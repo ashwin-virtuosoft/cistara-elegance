@@ -25,7 +25,7 @@ const Contact = () => {
           >
             Get in <span className="gradient-gold-text">Touch</span>
           </motion.h1>
-          <p className="text-muted-foreground font-serif text-lg">
+          <p className="text-medium font-serif text-lg">
             We'd love to hear from you. Reach out to discuss how we can serve your establishment.
           </p>
         </div>

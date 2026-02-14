@@ -85,7 +85,7 @@ const Index = () => {
                 </motion.h1>
               </AnimatePresence>
             </div>
-            <motion.p variants={fadeUp} custom={2} className="text-xl font-serif text-muted-foreground mb-8 italic">
+            <motion.p variants={fadeUp} custom={2} className="text-xl font-serif  mb-8 italic">
               Excellence Meets Elegance
             </motion.p>
             <motion.div variants={fadeUp} custom={3} className="flex flex-wrap gap-4">
@@ -122,7 +122,7 @@ const Index = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
-          className="text-lg text-muted-foreground font-serif leading-relaxed"
+          className="text-xl font-medium font-serif leading-relaxed"
         >
           We are a trusted supplier of quality-driven, complete solutions for upscale hotels,
           fine dining restaurants, and catering sectors — combining practical excellence with

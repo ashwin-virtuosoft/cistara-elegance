@@ -52,7 +52,7 @@ const Products = () => {
           >
             Our <span className="gradient-gold-text">Products</span>
           </motion.h1>
-          <p className="text-muted-foreground font-serif text-lg mb-8">
+          <p className="font-medium font-serif text-lg mb-8">
             Premium glassware, buffet equipment, and hospitality essentials for discerning establishments
           </p>
 
