@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mb-12">
         {/* Left Section - Logo & Description */}
         <div className="col-span-1">
-          <img src={logo} alt="Cistara" className="h-12 sm:h-14 mb-4 sm:mb-6 brightness-200" />
+            <img src={logo} alt="Cistara" className="h-12 sm:h-14 mb-4 sm:mb-6 brightness-200" />
           <p className="text-sm sm:text-base opacity-75 leading-relaxed">
             Premier hospitality supply partner delivering excellence and elegance to upscale hotels, restaurants, and catering businesses.
           </p>
