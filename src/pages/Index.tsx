@@ -91,7 +91,7 @@ const Index = () => {
             <motion.div variants={fadeUp} custom={3} className="flex flex-wrap gap-4">
               <Link
                 to="/products"
-                className="gradient-gold rounded-full px-8 py-3.5 font-semibold text-primary-foreground hover:scale-105 transition-transform inline-flex items-center gap-2"
+                className="rounded-full px-8 py-3.5 font-semibold text-primary-foreground hover:scale-105 transition-transform inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500"
               >
                 View Products <ArrowRight size={18} />
               </Link>
