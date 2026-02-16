@@ -52,7 +52,7 @@ const Products = () => {
           >
             Our <span className="gradient-gold-text">Products</span>
           </motion.h1>
-          <p className="text-muted-foreground font-serif text-lg mb-8">
+          <p className="text-base font-serif mb-8">
             Premium glassware, buffet equipment, and hospitality essentials for discerning establishments
           </p>
 
@@ -65,7 +65,7 @@ const Products = () => {
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                   active === cat
                     ? "gradient-gold text-primary-foreground"
-                    : "bg-card border border-border text-muted-foreground hover:border-primary hover:text-primary"
+                    : "bg-card border border-border hover:border-primary hover:text-primary"
                 }`}
               >
                 {cat}
@@ -101,7 +101,7 @@ const Products = () => {
                   </div>
                   <div className="p-5">
                     <h3 className="font-display text-lg font-semibold mb-2">{product.name}</h3>
-                    <div className="flex gap-4 text-xs text-muted-foreground">
+                    <div className="flex gap-4 text-xs">
                       <span>Capacity: {product.capacity}</span>
                       <span>Height: {product.height}</span>
                     </div>

@@ -38,7 +38,7 @@ const About = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-lg text-muted-foreground font-serif leading-relaxed"
+          className="text-base font-serif leading-relaxed"
         >
           At Cistara, our customers are always at the forefront of our minds. We've taken our years
           of experience in the hospitality industry and shaped it into an enterprise that actively
@@ -57,7 +57,7 @@ const About = () => (
           className="bg-card border border-border rounded-2xl p-8 md:p-12 text-center"
         >
           <h2 className="text-2xl md:text-3xl font-display font-bold mb-4">Our Vision</h2>
-          <p className="text-muted-foreground font-serif text-lg leading-relaxed italic">
+          <p className="text-base font-serif leading-relaxed italic">
             "To become a trusted supplier of quality-driven, complete solutions for upscale hotels,
             fine dining restaurants, and catering sectors — combining practical excellence with
             luxurious comfort under one roof."
@@ -86,7 +86,7 @@ const About = () => (
                 <v.icon size={24} className="text-primary-foreground" />
               </div>
               <h3 className="font-display text-xl font-semibold mb-3">{v.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{v.desc}</p>
+              <p className="text-sm leading-relaxed">{v.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -110,7 +110,7 @@ const About = () => (
               <h3 className="font-display text-xl font-semibold mb-4">{p.title}</h3>
               <ul className="space-y-2">
                 {p.items.map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
+                  <li key={item} className="flex items-center gap-2 text-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                     {item}
                   </li>

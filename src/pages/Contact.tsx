@@ -25,7 +25,7 @@ const Contact = () => {
           >
             Get in <span className="gradient-gold-text">Touch</span>
           </motion.h1>
-          <p className="text-muted-foreground font-serif text-lg">
+          <p className="text-base font-serif">
             We'd love to hear from you. Reach out to discuss how we can serve your establishment.
           </p>
         </div>
@@ -49,7 +49,7 @@ const Contact = () => {
                       <Mail size={20} className="text-primary-foreground" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Email</p>
+                      <p className="text-sm">Email</p>
                       <p className="font-medium">sales@cistara.com</p>
                     </div>
                   </a>
@@ -58,7 +58,7 @@ const Contact = () => {
                       <Phone size={20} className="text-primary-foreground" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Phone</p>
+                      <p className="text-sm">Phone</p>
                       <p className="font-medium">+971 52 495 5377</p>
                     </div>
                   </a>
@@ -67,7 +67,7 @@ const Contact = () => {
                       <MapPin size={20} className="text-primary-foreground" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">Address</p>
+                      <p className="text-sm">Address</p>
                       <p className="font-medium">SPC Free Zone Business Center,<br />Sharjah Publishing City Free Zone,<br />Sharjah, United Arab Emirates</p>
                     </div>
                   </div>

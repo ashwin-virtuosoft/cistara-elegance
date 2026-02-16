@@ -122,7 +122,7 @@ const Index = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
-          className="text-lg  font-serif leading-relaxed"
+          className="text-xl font-medium  font-serif leading-relaxed"
         >
           We are a trusted supplier of quality-driven, complete solutions for upscale hotels,
           fine dining restaurants, and catering sectors — combining practical excellence with
@@ -189,7 +189,7 @@ const Index = () => {
                 <f.icon size={24} className="text-primary-foreground" />
               </div>
               <h3 className="font-display text-lg font-semibold mb-2">{f.title}</h3>
-              <p className="text-sm text-muted-foreground">{f.desc}</p>
+              <p className="text-base">{f.desc}</p>
             </motion.div>
           ))}
         </div>
