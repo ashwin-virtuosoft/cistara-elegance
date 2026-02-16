@@ -67,7 +67,7 @@ const Index = () => {
             animate="visible"
             className="max-w-2xl"
           >
-            <motion.p variants={fadeUp} custom={0} className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
+            <motion.p variants={fadeUp} custom={0} className="text-primary font-bold tracking-widest uppercase text-xl mb-4">
               Cistara International FZE
             </motion.p>
             <div className="h-[120px] md:h-[160px] mb-4 overflow-hidden">
@@ -85,7 +85,7 @@ const Index = () => {
                 </motion.h1>
               </AnimatePresence>
             </div>
-            <motion.p variants={fadeUp} custom={2} className="text-xl font-serif text-muted-foreground mb-8 italic">
+            <motion.p variants={fadeUp} custom={2} className="text-2xl font-semibold font-serif  mb-8 italic">
               Excellence Meets Elegance
             </motion.p>
             <motion.div variants={fadeUp} custom={3} className="flex flex-wrap gap-4">
@@ -122,7 +122,7 @@ const Index = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
-          className="text-lg text-muted-foreground font-serif leading-relaxed"
+          className="text-lg  font-serif leading-relaxed"
         >
           We are a trusted supplier of quality-driven, complete solutions for upscale hotels,
           fine dining restaurants, and catering sectors — combining practical excellence with
