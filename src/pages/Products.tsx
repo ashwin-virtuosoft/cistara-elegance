@@ -129,6 +129,42 @@ const MANHATTAN_SPECS: MaltaVariantSpec[] = [
   },
 ];
 
+// Margarita glass: images and modal content (Serie Margarita – from PDF)
+const MARGARITA_IMAGES = {
+  empty: "/glasses/margarita/margarita.png",
+  gallery: [
+    { src: "/glasses/margarita/margarita.png", label: "Copa Margarita" },
+    { src: "/glasses/margarita/margarita-familia.png", label: "Margarita Familia" },
+    { src: "/glasses/margarita/margarita-cocktail.png", label: "Margarita Cocktail" },
+    { src: "/glasses/margarita/margarita-berry.png", label: "Margarita Berry" },
+  ],
+};
+
+const SERIE_MARGARITA_CONTENT = {
+  title: "Serie Margarita",
+  subtitle: "Stemmed cocktail glassware",
+  description:
+    "The Margarita series features the classic stemmed cocktail glass: wide, shallow bowl with a flared rim, slender stem, and stable base. Perfect for margaritas, daiquiris, and other cocktails. Clear crystal, ideal for hospitality and bar service.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Classic wide shallow bowl and flared rim",
+    "Slender stem and circular base",
+    "Ideal for margaritas, daiquiris, and cocktails",
+  ],
+};
+
+const MARGARITA_SPECS: MaltaVariantSpec[] = [
+  {
+    productCode: "V1099 AA6 MARGARITA 27CL",
+    capacityUS: "9 oz.",
+    capacityImperial: "9½ oz.",
+    height: "164mm",
+    diameter: "109mm",
+    palletQuantity: "396 p.p.",
+    ean: "8435420320322",
+  },
+];
+
 type GlassModalContent = {
   title: string;
   subtitle: string;
@@ -146,7 +182,7 @@ type GlassType = {
 };
 
 const otherGlassNames = [
-  "Margarita", "Mencia", "Merlot", "Meslier", "Millot", "Mirage", "Mokka",
+  "Mencia", "Merlot", "Meslier", "Millot", "Mirage", "Mokka",
   "Monastrell", "Nervion", "Ouro", "Piamonte", "Pinot", "Rioja", "Rocky Stack", "Rome", "Roncal",
   "Samara", "Sauvignon", "Seira", "SETS – Bodegon", "Stack", "Subirats", "Syrah", "T-Nonic", "T-Pinta",
   "Toscana", "Txikitero", "Valencia", "Valon", "Vermut", "Vintage", "Viura", "Xarel",
@@ -171,6 +207,16 @@ const glassTypes: GlassType[] = [
       ...SERIE_MANHATTAN_CONTENT,
       gallery: MANHATTAN_IMAGES.gallery,
       specs: MANHATTAN_SPECS,
+    },
+  },
+  {
+    name: "Margarita",
+    emptyImage: MARGARITA_IMAGES.empty,
+    filledImage: MARGARITA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MARGARITA_CONTENT,
+      gallery: MARGARITA_IMAGES.gallery,
+      specs: MARGARITA_SPECS,
     },
   },
   ...otherGlassNames.map((name) => ({
