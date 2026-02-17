@@ -165,6 +165,82 @@ const MARGARITA_SPECS: MaltaVariantSpec[] = [
   },
 ];
 
+// Mencia glass: images and modal content (Serie Mencia)
+const MENCIA_IMAGES = {
+  empty: "/glasses/mencia/mencia-44.png",
+  gallery: [
+    { src: "/glasses/mencia/mencia-44.png", label: "Mencia 44cl" },
+    { src: "/glasses/mencia/mencia-25.png", label: "Mencia 25cl" },
+    { src: "/glasses/mencia/mencia-31.png", label: "Mencia 31cl" },
+    { src: "/glasses/mencia/mencia-cerveza.png", label: "Mencia Cerveza" },
+    { src: "/glasses/mencia/mencia-ambiente.png", label: "Mencia Ambiente" },
+    { src: "/glasses/mencia/mencia-copas.png", label: "Mencia Copas" },
+    { src: "/glasses/mencia/mencia-wine.png", label: "Mencia Wine" },
+    { src: "/glasses/mencia/mencia-b.png", label: "Mencia B" },
+  ],
+};
+
+const SERIE_MENCIA_CONTENT = {
+  title: "Serie Mencia",
+  subtitle: "Stemmed wine & beverage glassware",
+  description:
+    "The Mencia series offers elegant stemmed glasses with a distinctive tulip-shaped bowl that narrows to a V at the base. Wide rim, slender stem, and stable foot. Suited for wine, beer, and sparkling—from large red wine to champagne flutes and smaller tasting sizes. Clear crystal, refined for hospitality and dining.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Tulip-shaped bowl with angular V-base",
+    "Slender stem and circular foot",
+    "Range from wine and champagne to beer and tasting",
+  ],
+};
+
+const MENCIA_SPECS: MaltaVariantSpec[] = [
+  {
+    productCode: "V0265 AA6 MENCIA 58CL",
+    capacityUS: "19 1/2 oz.",
+    capacityImperial: "20 1/4 oz.",
+    height: "240mm",
+    diameter: "93mm",
+    palletQuantity: "384 p.p.",
+    ean: "8436536682328",
+  },
+  {
+    productCode: "V0264 AA6 MENCIA 44CL",
+    capacityUS: "14 3/4 oz.",
+    capacityImperial: "15 1/2 oz.",
+    height: "230mm",
+    diameter: "85.5mm",
+    palletQuantity: "384 p.p.",
+    ean: "8436536682311",
+  },
+  {
+    productCode: "V0263 AA6 MENCIA 31CL",
+    capacityUS: "10 1/4 oz.",
+    capacityImperial: "10 3/4 oz.",
+    height: "208mm",
+    diameter: "77.2mm",
+    palletQuantity: "630 p.p.",
+    ean: "8436536682304",
+  },
+  {
+    productCode: "V0262 AA6 MENCIA 25CL",
+    capacityUS: "8 1/4 oz.",
+    capacityImperial: "8 3/4 oz.",
+    height: "192mm",
+    diameter: "71.5mm",
+    palletQuantity: "750 p.p.",
+    ean: "8436536682298",
+  },
+  {
+    productCode: "V0290 AA6 MENCIA 17CL",
+    capacityUS: "5 3/4 oz.",
+    capacityImperial: "6 oz.",
+    height: "205mm",
+    diameter: "60.5mm",
+    palletQuantity: "1,080 p.p.",
+    ean: "8436536682526",
+  },
+];
+
 type GlassModalContent = {
   title: string;
   subtitle: string;
@@ -182,7 +258,7 @@ type GlassType = {
 };
 
 const otherGlassNames = [
-  "Mencia", "Merlot", "Meslier", "Millot", "Mirage", "Mokka",
+  "Merlot", "Meslier", "Millot", "Mirage", "Mokka",
   "Monastrell", "Nervion", "Ouro", "Piamonte", "Pinot", "Rioja", "Rocky Stack", "Rome", "Roncal",
   "Samara", "Sauvignon", "Seira", "SETS – Bodegon", "Stack", "Subirats", "Syrah", "T-Nonic", "T-Pinta",
   "Toscana", "Txikitero", "Valencia", "Valon", "Vermut", "Vintage", "Viura", "Xarel",
@@ -217,6 +293,16 @@ const glassTypes: GlassType[] = [
       ...SERIE_MARGARITA_CONTENT,
       gallery: MARGARITA_IMAGES.gallery,
       specs: MARGARITA_SPECS,
+    },
+  },
+  {
+    name: "Mencia",
+    emptyImage: MENCIA_IMAGES.empty,
+    filledImage: MENCIA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MENCIA_CONTENT,
+      gallery: MENCIA_IMAGES.gallery,
+      specs: MENCIA_SPECS,
     },
   },
   ...otherGlassNames.map((name) => ({
