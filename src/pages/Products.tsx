@@ -93,6 +93,42 @@ const MALTA_SPECS: MaltaVariantSpec[] = [
   },
 ];
 
+// Manhattan glass: images and modal content (Serie Manhattan – from PDF)
+const MANHATTAN_IMAGES = {
+  empty: "/glasses/manhattan/manhattan.png",
+  gallery: [
+    { src: "/glasses/manhattan/manhattan.png", label: "Manhattan" },
+    { src: "/glasses/manhattan/manhattan-familia.png", label: "Manhattan Familia" },
+    { src: "/glasses/manhattan/manhattan-gin.png", label: "Manhattan Gin" },
+    { src: "/glasses/manhattan/manhattan-cocktail.png", label: "Manhattan Cocktail" },
+  ],
+};
+
+const SERIE_MANHATTAN_CONTENT = {
+  title: "Serie Manhattan",
+  subtitle: "Stemmed balloon glassware",
+  description:
+    "The Manhattan series features elegant stemmed glasses with a wide, rounded bowl—ideal for red wine, gin balloons, and cocktails. Clear crystal with a refined silhouette, slender stem, and stable base, suited for premium hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Wide rounded bowl with subtle textured detail",
+    "Slender stem and circular base",
+    "Ideal for wine, gin balloons, and cocktails",
+  ],
+};
+
+const MANHATTAN_SPECS: MaltaVariantSpec[] = [
+  {
+    productCode: "V0768 AA6 MANHATTAN 72CL",
+    capacityUS: "24¼ oz.",
+    capacityImperial: "25¼ oz.",
+    height: "225mm",
+    diameter: "103mm",
+    palletQuantity: "288 p.p.",
+    ean: "8436536686388",
+  },
+];
+
 type GlassModalContent = {
   title: string;
   subtitle: string;
@@ -110,7 +146,7 @@ type GlassType = {
 };
 
 const otherGlassNames = [
-  "Manhattan", "Margarita", "Mencia", "Merlot", "Meslier", "Millot", "Mirage", "Mokka",
+  "Margarita", "Mencia", "Merlot", "Meslier", "Millot", "Mirage", "Mokka",
   "Monastrell", "Nervion", "Ouro", "Piamonte", "Pinot", "Rioja", "Rocky Stack", "Rome", "Roncal",
   "Samara", "Sauvignon", "Seira", "SETS – Bodegon", "Stack", "Subirats", "Syrah", "T-Nonic", "T-Pinta",
   "Toscana", "Txikitero", "Valencia", "Valon", "Vermut", "Vintage", "Viura", "Xarel",
@@ -125,6 +161,16 @@ const glassTypes: GlassType[] = [
       ...SERIE_MALTA_CONTENT,
       gallery: MALTA_IMAGES.gallery,
       specs: MALTA_SPECS,
+    },
+  },
+  {
+    name: "Manhattan",
+    emptyImage: MANHATTAN_IMAGES.empty,
+    filledImage: MANHATTAN_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MANHATTAN_CONTENT,
+      gallery: MANHATTAN_IMAGES.gallery,
+      specs: MANHATTAN_SPECS,
     },
   },
   ...otherGlassNames.map((name) => ({
