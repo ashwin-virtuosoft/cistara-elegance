@@ -241,6 +241,367 @@ const MENCIA_SPECS: MaltaVariantSpec[] = [
   },
 ];
 
+// Merlot glass: images and modal content (Serie Merlot – stemmed wine + tumblers)
+const MERLOT_IMAGES = {
+  empty: "/glasses/merlot/merlot-42.png",
+  gallery: [
+    { src: "/glasses/merlot/merlot-42.png", label: "Merlot 42cl" },
+    { src: "/glasses/merlot/merlot-31.png", label: "Merlot 31cl" },
+    { src: "/glasses/merlot/merlot-23.png", label: "Merlot 23cl" },
+    { src: "/glasses/merlot/merlot-19.png", label: "Merlot 19cl" },
+    { src: "/glasses/merlot/merlot-vaso.png", label: "Merlot Vaso" },
+    { src: "/glasses/merlot/merlot-bajo.png", label: "Merlot Bajo" },
+    { src: "/glasses/merlot/merlot-familia.png", label: "Merlot Familia" },
+    { src: "/glasses/merlot/merlot-copas.png", label: "Merlot Copas" },
+    { src: "/glasses/merlot/merlot-wine.png", label: "Merlot Wine" },
+  ],
+};
+
+const SERIE_MERLOT_CONTENT = {
+  title: "Serie Merlot",
+  subtitle: "Stemmed wine glasses & tumblers",
+  description:
+    "The Merlot series includes stemmed wine glasses in several sizes and cylindrical tumblers (highball and rocks). Broad rounded bowls for red wine, slender stems and flutes, plus straight-sided tumblers for water, soft drinks, and cocktails. Fully tempered, extra resistant glass.",
+  features: [
+    "Clear, fully tempered crystal glass",
+    "Stemmed wine glasses and tumblers",
+    "Broad bowl for red wine; flute option for white/champagne",
+    "Cylindrical tumblers for water, highball, and rocks",
+  ],
+};
+
+const MERLOT_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0097 AA12 MERLOT 42CL", capacityUS: "14 oz.", capacityImperial: "14¾ oz.", height: "209mm", diameter: "88.5mm", palletQuantity: "480 p.p.", ean: "8436536680546" },
+  { productCode: "V0098 AA12 MERLOT 31CL", capacityUS: "10¼ oz.", capacityImperial: "10¾ oz.", height: "196mm", diameter: "80mm", palletQuantity: "600 p.p.", ean: "8436536680591" },
+  { productCode: "V0099 AA12 MERLOT 23CL", capacityUS: "7¾ oz.", capacityImperial: "8 oz.", height: "174mm", diameter: "75mm", palletQuantity: "720 p.p.", ean: "8436536680607" },
+  { productCode: "V0100 AA12 MERLOT 19CL", capacityUS: "6¼ oz.", capacityImperial: "6½ oz.", height: "168mm", diameter: "69.5mm", palletQuantity: "840 p.p.", ean: "8436536680614" },
+  { productCode: "V0105 AA12 MERLOT 15CL", capacityUS: "5 oz.", capacityImperial: "5¼ oz.", height: "196.5mm", diameter: "60.5mm", palletQuantity: "1,140 p.p.", ean: "8436536680652" },
+  { productCode: "V0766 A12 MERLOT 50CL", capacityUS: "17 oz.", capacityImperial: "17½ oz.", height: "163mm", diameter: "73.6mm", palletQuantity: "864 p.p.", ean: "8436536686364" },
+  { productCode: "V0306 A12 MERLOT 35CL", capacityUS: "12 oz.", capacityImperial: "12 oz.", height: "147.5mm", diameter: "66.5mm", palletQuantity: "1,080 p.p.", ean: "8436536682687" },
+  { productCode: "V0305 A12 MERLOT 28CL", capacityUS: "10 oz.", capacityImperial: "10 oz.", height: "126.5mm", diameter: "65.5mm", palletQuantity: "1,260 p.p.", ean: "8436536682670" },
+  { productCode: "V0304 A12 MERLOT HB* 24CL", capacityUS: "8 oz.", capacityImperial: "8¾ oz.", height: "110mm", diameter: "64.5mm", palletQuantity: "1,440 p.p.", ean: "8436536682663" },
+];
+
+// Meslier glass: images and modal content (Serie Meslier – champagne flutes)
+const MESLIER_IMAGES = {
+  empty: "/glasses/meslier/meslier-17.png",
+  gallery: [
+    { src: "/glasses/meslier/meslier-17.png", label: "Meslier 17cl" },
+    { src: "/glasses/meslier/meslier-ambiente.png", label: "Ambiente Meslier" },
+    { src: "/glasses/meslier/meslier-ambiente-2.png", label: "Ambiente Meslier 2" },
+  ],
+};
+
+const SERIE_MESLIER_CONTENT = {
+  title: "Serie Meslier",
+  subtitle: "Champagne flute glassware",
+  description:
+    "The Meslier series offers elegant champagne flutes: tall, slender bowls that taper gently from rim to stem, long delicate stems, and a stable circular base. Designed to showcase effervescence and preserve bubbles. Clear crystal, ideal for champagne, sparkling wine, and cocktails.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Classic champagne flute silhouette",
+    "Elongated bowl and long slender stem",
+    "Ideal for champagne and sparkling wine",
+  ],
+};
+
+const MESLIER_SPECS: MaltaVariantSpec[] = [];
+
+// Millot glass: images and modal content (Serie Millot – wine goblets)
+const MILLOT_IMAGES = {
+  empty: "/glasses/millot/millot-47.png",
+  gallery: [
+    { src: "/glasses/millot/millot-47.png", label: "Millot 47cl" },
+    { src: "/glasses/millot/millot-40.png", label: "Millot 40cl" },
+    { src: "/glasses/millot/millot-ambiente.png", label: "Millot Ambiente" },
+    { src: "/glasses/millot/millot-familia.png", label: "Millot Familia" },
+  ],
+};
+
+const SERIE_MILLOT_CONTENT = {
+  title: "Serie Millot",
+  subtitle: "Stemmed wine goblets",
+  description:
+    "The Millot series features elegant stemmed wine glasses with a tulip or U-shaped bowl that tapers toward the rim, and a distinct angular V where the bowl meets the stem. Slender stem and circular base. Versatile for red and white wine, with a clean, modern silhouette. Clear crystal for hospitality and dining.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Tulip or U-shaped bowl with angular V-base",
+    "Slender stem and circular foot",
+    "Suitable for red and white wine",
+  ],
+};
+
+const MILLOT_SPECS: MaltaVariantSpec[] = [];
+
+// Mirage glass: images and modal content (Serie Mirage – tumblers)
+const MIRAGE_IMAGES = {
+  empty: "/glasses/mirage/mirage-30.png",
+  gallery: [
+    { src: "/glasses/mirage/mirage-30.png", label: "Mirage 30cl" },
+    { src: "/glasses/mirage/mirage-27.png", label: "Mirage 27cl" },
+    { src: "/glasses/mirage/mirage-20.png", label: "Mirage 20cl" },
+    { src: "/glasses/mirage/mirage-16.png", label: "Mirage 16cl" },
+    { src: "/glasses/mirage/mirage-agua.png", label: "Mirage Agua" },
+    { src: "/glasses/mirage/mirage-zumo.png", label: "Mirage Zumo" },
+    { src: "/glasses/mirage/mirage-postre.png", label: "Mirage Postre" },
+    { src: "/glasses/mirage/mirage-bodegon.png", label: "Mirage Bodegon" },
+    { src: "/glasses/mirage/mirage-2.png", label: "Mirage" },
+    { src: "/glasses/mirage/mirage-tumbler.png", label: "Mirage Tumbler" },
+  ],
+};
+
+const SERIE_MIRAGE_CONTENT = {
+  title: "Serie Mirage",
+  subtitle: "Tumbler glassware",
+  description:
+    "The Mirage series offers clear tumblers in a range of sizes—from tall, slightly tapered highball-style glasses to shorter, rounded cups. Versatile for water, juice, desserts, and appetizers. Simple cylindrical or gently curved shapes with a solid base. Ideal for hospitality, catering, and casual dining.",
+  features: [
+    "Clear, transparent glass",
+    "Tumbler and highball styles",
+    "Slightly curved or cylindrical body, solid base",
+    "Suitable for water, juice, desserts, and appetizers",
+  ],
+};
+
+const MIRAGE_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0713 A12 MIRAGE HB* 30CL", capacityUS: "10 oz.", capacityImperial: "10½ oz.", height: "111.5mm", diameter: "69mm", palletQuantity: "1,248 p.p.", ean: "8435420320117" },
+  { productCode: "V0711 BFA12 MIRAGE 27CL", capacityUS: "18¾ oz.", capacityImperial: "19½ oz.", height: "82mm", diameter: "75.7mm", palletQuantity: "1,728 p.p.", ean: "8435420320094" },
+  { productCode: "V0712 A12 MIRAGE HB* 20CL", capacityUS: "6¾ oz.", capacityImperial: "7 oz.", height: "98mm", diameter: "60.7mm", palletQuantity: "1,944 p.p.", ean: "8435420320100" },
+  { productCode: "V0710 BFA12 MIRAGE 16CL", capacityUS: "5½ oz.", capacityImperial: "5 2/3 oz.", height: "70mm", diameter: "64.5mm", palletQuantity: "3,024 p.p.", ean: "8435420320087" },
+];
+
+// Mokka glass: images and modal content (Serie Mokka – coffee & beverage tumblers)
+const MOKKA_IMAGES = {
+  empty: "/glasses/mokka/mokka-11.png",
+  gallery: [
+    { src: "/glasses/mokka/mokka-11.png", label: "Mokka 11cl" },
+    { src: "/glasses/mokka/mokka-12-9.png", label: "Mokka 12.9cl" },
+    { src: "/glasses/mokka/mokka-postre.png", label: "Mokka Postre" },
+    { src: "/glasses/mokka/mokka-infusion.png", label: "Mokka Infusion" },
+    { src: "/glasses/mokka/mokka-bodegon.png", label: "Mokka Bodegon" },
+  ],
+};
+
+const SERIE_MOKKA_CONTENT = {
+  title: "Serie Mokka",
+  subtitle: "Coffee & beverage tumblers",
+  description:
+    "The Mokka series offers clear tumblers for coffee, infusions, desserts, and beverages. Slightly tapered or cylindrical shapes with a solid base; some models feature a metallic band accent. Ideal for mokka, café, yogurt, and infused drinks in hospitality and café settings.",
+  features: [
+    "Clear, transparent glass",
+    "Tumbler design with solid base",
+    "Optional metallic band accent on base",
+    "Suitable for coffee, infusions, desserts, and beverages",
+  ],
+};
+
+const MOKKA_SPECS: MaltaVariantSpec[] = [];
+
+// Monastrell glass: images and modal content (Serie Monastrell – champagne coupe/saucer)
+const MONASTRELL_IMAGES = {
+  empty: "/glasses/monastrell/monastrell.png",
+  gallery: [
+    { src: "/glasses/monastrell/monastrell.png", label: "Monastrell" },
+    { src: "/glasses/monastrell/monastrell-ambiente.png", label: "Monastrell Ambiente" },
+    { src: "/glasses/monastrell/monastrell-ambiente-vacio.png", label: "Monastrell Ambiente Vacio" },
+  ],
+};
+
+const SERIE_MONASTRELL_CONTENT = {
+  title: "Serie Monastrell",
+  subtitle: "Champagne coupe & saucer glassware",
+  description:
+    "The Monastrell series features the classic champagne coupe (or saucer): a broad, shallow bowl that curves gracefully from a slender stem to a flat circular base. Elegant silhouette for sparkling wine and cocktails. Clear crystal, ideal for celebrations and hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Classic coupe / champagne saucer shape",
+    "Broad shallow bowl, slender stem, circular base",
+    "Ideal for champagne and sparkling wine",
+  ],
+};
+
+const MONASTRELL_SPECS: MaltaVariantSpec[] = [];
+
+// Nervion glass: images and modal content (Serie Nervion – faceted tumblers)
+const NERVION_IMAGES = {
+  empty: "/glasses/nervion/nervion-29.png",
+  gallery: [
+    { src: "/glasses/nervion/nervion-29.png", label: "Nervion 29cl" },
+    { src: "/glasses/nervion/nervion-20.png", label: "Nervion 20cl" },
+    { src: "/glasses/nervion/nervion-bodegon.png", label: "Nervion Bodegon" },
+    { src: "/glasses/nervion/nervion-ambiente.png", label: "Nervion Ambiente" },
+  ],
+};
+
+const SERIE_NERVION_CONTENT = {
+  title: "Serie Nervion",
+  subtitle: "Faceted tumbler glassware",
+  description:
+    "The Nervion series offers clear tumblers with a distinctive faceted or fluted lower section and a smooth upper half. Thick base, sturdy build; some models have a subtle scalloped band below the rim. Suited for coffee, spirits, water, and beverages in hospitality and bar settings.",
+  features: [
+    "Clear, transparent glass",
+    "Vertical fluting or facets on lower section",
+    "Thick base, smooth rim",
+    "Suitable for coffee, spirits, and beverages",
+  ],
+};
+
+const NERVION_SPECS: MaltaVariantSpec[] = [];
+
+// Ouro glass: images and modal content (Serie Ouro – shot glasses)
+const OURO_IMAGES = {
+  empty: "/glasses/ouro/ouro-vertical.png",
+  gallery: [
+    { src: "/glasses/ouro/ouro-vertical.png", label: "Ouro Ambiente Vertical" },
+    { src: "/glasses/ouro/ouro-horizontal.png", label: "Ouro Ambiente Horizontal" },
+  ],
+};
+
+const SERIE_OURO_CONTENT = {
+  title: "Serie Ouro",
+  subtitle: "Shot glass glassware",
+  description:
+    "The Ouro series offers clear shot glasses in a range of heights and proportions—from taller, straight-sided to shorter, flared designs. Thick solid base, smooth rims. Ideal for spirits, liqueurs, and cocktails. Clean, minimalist style for bar and hospitality.",
+  features: [
+    "Clear, transparent glass",
+    "Shot glass range: varying heights and shapes",
+    "Thick solid base, smooth rim",
+    "Suitable for spirits, liqueurs, and cocktails",
+  ],
+};
+
+const OURO_SPECS: MaltaVariantSpec[] = [];
+
+// Piamonte glass: images and modal content (Serie Piamonte – wavy tumblers)
+const PIAMONTE_IMAGES = {
+  empty: "/glasses/piamonte/piamonte-50.png",
+  gallery: [
+    { src: "/glasses/piamonte/piamonte-50.png", label: "Piamonte 50cl" },
+    { src: "/glasses/piamonte/piamonte-marianito.png", label: "Piamonte Marianito" },
+    { src: "/glasses/piamonte/piamonte-bodegon.png", label: "Piamonte Bodegon" },
+    { src: "/glasses/piamonte/piamonte-cerveza.png", label: "Piamonte Cerveza" },
+    { src: "/glasses/piamonte/piamonte-familia.png", label: "Piamonte Familia" },
+    { src: "/glasses/piamonte/piamonte-vermut.png", label: "Piamonte Vermut" },
+    { src: "/glasses/piamonte/piamonte-4.png", label: "Piamonte" },
+    { src: "/glasses/piamonte/piamonte-tumbler.png", label: "Piamonte Tumbler" },
+  ],
+};
+
+const SERIE_PIAMONTE_CONTENT = {
+  title: "Serie Piamonte",
+  subtitle: "Wavy tumbler glassware",
+  description:
+    "The Piamonte series features clear tumblers with a distinctive, subtly undulating or wavy profile—organic, hand-blown aesthetic. Thick base, smooth flared rim. Ideal for beer, vermouth, marianito, juices, and long drinks. Versatile for aperitifs and hospitality.",
+  features: [
+    "Clear, transparent glass",
+    "Undulating / wavy side profile",
+    "Thick base, smooth rim",
+    "Suitable for beer, vermouth, marianito, and long drinks",
+  ],
+};
+
+const PIAMONTE_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V1358 A12 PIAMONTE 50CL", capacityUS: "16¾ oz.", capacityImperial: "17½ oz.", height: "156mm", diameter: "78mm", palletQuantity: "720 p.p.", ean: "8436536688832" },
+  { productCode: "V1357 A12 PIAMONTE 38CL", capacityUS: "12¾ oz.", capacityImperial: "13¼ oz.", height: "131,5mm", diameter: "72mm", palletQuantity: "1,008 p.p.", ean: "8436536688825" },
+  { productCode: "V1356 A12 PIAMONTE 24CL", capacityUS: "8 oz.", capacityImperial: "8¼ oz.", height: "110mm", diameter: "63mm", palletQuantity: "1,728 p.p.", ean: "8436536688818" },
+];
+
+// Pinot glass: images and modal content (Serie Pinot – wine glasses & flute)
+const PINOT_IMAGES = {
+  empty: "/glasses/pinot/pinot-25.png",
+  gallery: [
+    { src: "/glasses/pinot/pinot-25.png", label: "Pinot 25cl" },
+    { src: "/glasses/pinot/pinot-copas.png", label: "Copas Pinot" },
+    { src: "/glasses/pinot/pinot-ambiente.png", label: "Pinot Ambiente" },
+    { src: "/glasses/pinot/pinot-wine.png", label: "Pinot Wine" },
+    { src: "/glasses/pinot/pinot-1.png", label: "Pinot" },
+    { src: "/glasses/pinot/pinot-2.png", label: "Pinot 2" },
+    { src: "/glasses/pinot/pinot-3.png", label: "Pinot 3" },
+    { src: "/glasses/pinot/pinot-5.png", label: "Pinot 5" },
+    { src: "/glasses/pinot/pinot-6.png", label: "Pinot 6" },
+    { src: "/glasses/pinot/pinot-7.png", label: "Pinot 7" },
+    { src: "/glasses/pinot/pinot-9.png", label: "Pinot 9" },
+    { src: "/glasses/pinot/pinot-11.png", label: "Pinot 11" },
+  ],
+};
+
+const SERIE_PINOT_CONTENT = {
+  title: "Serie Pinot",
+  subtitle: "Wine glasses & champagne flute",
+  description:
+    "The Pinot series includes stemmed wine glasses in several sizes—from large, wide-bowled red wine glasses to a slender champagne flute. Rounded bowls, slender stems, circular bases. Suited for red wine, white wine, and sparkling. Clear crystal for hospitality and dining.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Stemmed wine glasses and flute",
+    "Wide bowl for red; compact or flute for white/sparkling",
+    "Suitable for red wine, white wine, and champagne",
+  ],
+};
+
+const PINOT_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0217 AA6 PINOT 58CL", capacityUS: "19½ oz.", capacityImperial: "20¼ oz.", height: "230mm", diameter: "93mm", palletQuantity: "384 p.p.", ean: "8436536681697" },
+  { productCode: "V0216 AA12 PINOT 47CL", capacityUS: "15¾ oz.", capacityImperial: "16½ oz.", height: "220.5mm", diameter: "87mm", palletQuantity: "384 p.p.", ean: "8436536681680" },
+  { productCode: "V0215 AA12 PINOT 35CL", capacityUS: "11¾ oz.", capacityImperial: "12¼ oz.", height: "202mm", diameter: "80mm", palletQuantity: "600 p.p.", ean: "8436536681673" },
+  { productCode: "V0214 AA12 PINOT 25CL", capacityUS: "8¼ oz.", capacityImperial: "8¾ oz.", height: "182mm", diameter: "71mm", palletQuantity: "780 p.p.", ean: "8436536681666" },
+  { productCode: "V0213 AA12 PINOT 17CL", capacityUS: "5¾ oz.", capacityImperial: "6 oz.", height: "197mm", diameter: "52.8mm", palletQuantity: "1,080 p.p.", ean: "8436536681659" },
+];
+
+// Rioja glass: images and modal content (Serie Rioja – stemmed wine glasses)
+const RIOJA_IMAGES = {
+  empty: "/glasses/rioja/rioja-56.png",
+  gallery: [
+    { src: "/glasses/rioja/rioja-56.png", label: "Rioja 56cl" },
+    { src: "/glasses/rioja/rioja-56-bodegon.png", label: "Rioja 56cl Bodegón" },
+    { src: "/glasses/rioja/rioja-42.png", label: "Rioja 42cl" },
+    { src: "/glasses/rioja/rioja-42-bodegon.png", label: "Rioja 42cl Bodegón" },
+  ],
+};
+
+const SERIE_RIOJA_CONTENT = {
+  title: "Serie Rioja",
+  subtitle: "Stemmed wine glasses",
+  description:
+    "The Rioja series offers elegant stemmed wine glasses in clear crystal, with a tulip-shaped bowl that tapers toward the rim—ideal for concentrating aromas. Available in 56cl and 42cl sizes. Slender stem and circular base, suited for red and white wine in hospitality and dining.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Tulip-shaped bowl for aroma concentration",
+    "Slender stem and stable circular base",
+    "Available in 56cl and 42cl variants",
+  ],
+};
+
+const RIOJA_SPECS: MaltaVariantSpec[] = [];
+
+// Rocky Stack glass: images and modal content (stackable tumblers)
+const ROCKY_STACK_IMAGES = {
+  empty: "/glasses/rocky-stack/rocky-stack-30.png",
+  gallery: [
+    { src: "/glasses/rocky-stack/rocky-stack-30.png", label: "Rocky Stack 30cl" },
+    { src: "/glasses/rocky-stack/rocky-stack-28.png", label: "Rocky Stack 28cl" },
+    { src: "/glasses/rocky-stack/rocky-stack-single.png", label: "Rocky Stack" },
+    { src: "/glasses/rocky-stack/rocky-stack-ambiente-3.png", label: "Rocky Stack Ambiente" },
+    { src: "/glasses/rocky-stack/rocky-stack-ambiente-4.png", label: "Rocky Stack Ambiente 4" },
+  ],
+};
+
+const SERIE_ROCKY_STACK_CONTENT = {
+  title: "Serie Rocky Stack",
+  subtitle: "Stackable tumblers",
+  description:
+    "The Rocky Stack series features clear, stackable tumblers with a distinct horizontal ridge for secure nesting. Robust base and cylindrical shape. Available in 30cl (taller) and 28cl (shorter, wider) variants. Ideal for juice, cocktails, and cold drinks in bars and hospitality.",
+  features: [
+    "Clear, transparent glass",
+    "Stackable design with horizontal ridge",
+    "Robust base and stable construction",
+    "30cl and 28cl variants",
+  ],
+};
+
+const ROCKY_STACK_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0233 A12 R. STACK 30CL", capacityUS: "10 oz.", capacityImperial: "10½ oz.", height: "121mm", diameter: "76,6mm", palletQuantity: "1,056 p.p.", ean: "8436536681970" },
+  { productCode: "V0234 A12 R. STACK 28CL", capacityUS: "9¼ oz.", capacityImperial: "9¾ oz.", height: "86mm", diameter: "82,4mm", palletQuantity: "1,080 p.p.", ean: "8436536681987" },
+];
+
 type GlassModalContent = {
   title: string;
   subtitle: string;
@@ -258,8 +619,7 @@ type GlassType = {
 };
 
 const otherGlassNames = [
-  "Merlot", "Meslier", "Millot", "Mirage", "Mokka",
-  "Monastrell", "Nervion", "Ouro", "Piamonte", "Pinot", "Rioja", "Rocky Stack", "Rome", "Roncal",
+  "Rome", "Roncal",
   "Samara", "Sauvignon", "Seira", "SETS – Bodegon", "Stack", "Subirats", "Syrah", "T-Nonic", "T-Pinta",
   "Toscana", "Txikitero", "Valencia", "Valon", "Vermut", "Vintage", "Viura", "Xarel",
 ];
@@ -303,6 +663,126 @@ const glassTypes: GlassType[] = [
       ...SERIE_MENCIA_CONTENT,
       gallery: MENCIA_IMAGES.gallery,
       specs: MENCIA_SPECS,
+    },
+  },
+  {
+    name: "Merlot",
+    emptyImage: MERLOT_IMAGES.empty,
+    filledImage: MERLOT_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MERLOT_CONTENT,
+      gallery: MERLOT_IMAGES.gallery,
+      specs: MERLOT_SPECS,
+    },
+  },
+  {
+    name: "Meslier",
+    emptyImage: MESLIER_IMAGES.empty,
+    filledImage: MESLIER_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MESLIER_CONTENT,
+      gallery: MESLIER_IMAGES.gallery,
+      specs: MESLIER_SPECS,
+    },
+  },
+  {
+    name: "Millot",
+    emptyImage: MILLOT_IMAGES.empty,
+    filledImage: MILLOT_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MILLOT_CONTENT,
+      gallery: MILLOT_IMAGES.gallery,
+      specs: MILLOT_SPECS,
+    },
+  },
+  {
+    name: "Mirage",
+    emptyImage: MIRAGE_IMAGES.empty,
+    filledImage: MIRAGE_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MIRAGE_CONTENT,
+      gallery: MIRAGE_IMAGES.gallery,
+      specs: MIRAGE_SPECS,
+    },
+  },
+  {
+    name: "Mokka",
+    emptyImage: MOKKA_IMAGES.empty,
+    filledImage: MOKKA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MOKKA_CONTENT,
+      gallery: MOKKA_IMAGES.gallery,
+      specs: MOKKA_SPECS,
+    },
+  },
+  {
+    name: "Monastrell",
+    emptyImage: MONASTRELL_IMAGES.empty,
+    filledImage: MONASTRELL_IMAGES.empty,
+    modalContent: {
+      ...SERIE_MONASTRELL_CONTENT,
+      gallery: MONASTRELL_IMAGES.gallery,
+      specs: MONASTRELL_SPECS,
+    },
+  },
+  {
+    name: "Nervion",
+    emptyImage: NERVION_IMAGES.empty,
+    filledImage: NERVION_IMAGES.empty,
+    modalContent: {
+      ...SERIE_NERVION_CONTENT,
+      gallery: NERVION_IMAGES.gallery,
+      specs: NERVION_SPECS,
+    },
+  },
+  {
+    name: "Ouro",
+    emptyImage: OURO_IMAGES.empty,
+    filledImage: OURO_IMAGES.empty,
+    modalContent: {
+      ...SERIE_OURO_CONTENT,
+      gallery: OURO_IMAGES.gallery,
+      specs: OURO_SPECS,
+    },
+  },
+  {
+    name: "Piamonte",
+    emptyImage: PIAMONTE_IMAGES.empty,
+    filledImage: PIAMONTE_IMAGES.empty,
+    modalContent: {
+      ...SERIE_PIAMONTE_CONTENT,
+      gallery: PIAMONTE_IMAGES.gallery,
+      specs: PIAMONTE_SPECS,
+    },
+  },
+  {
+    name: "Pinot",
+    emptyImage: PINOT_IMAGES.empty,
+    filledImage: PINOT_IMAGES.empty,
+    modalContent: {
+      ...SERIE_PINOT_CONTENT,
+      gallery: PINOT_IMAGES.gallery,
+      specs: PINOT_SPECS,
+    },
+  },
+  {
+    name: "Rioja",
+    emptyImage: RIOJA_IMAGES.empty,
+    filledImage: RIOJA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_RIOJA_CONTENT,
+      gallery: RIOJA_IMAGES.gallery,
+      specs: RIOJA_SPECS,
+    },
+  },
+  {
+    name: "Rocky Stack",
+    emptyImage: ROCKY_STACK_IMAGES.empty,
+    filledImage: ROCKY_STACK_IMAGES.empty,
+    modalContent: {
+      ...SERIE_ROCKY_STACK_CONTENT,
+      gallery: ROCKY_STACK_IMAGES.gallery,
+      specs: ROCKY_STACK_SPECS,
     },
   },
   ...otherGlassNames.map((name) => ({
