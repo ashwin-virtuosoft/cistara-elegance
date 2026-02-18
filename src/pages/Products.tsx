@@ -243,7 +243,7 @@ const MENCIA_SPECS: MaltaVariantSpec[] = [
 
 // Merlot glass: images and modal content (Serie Merlot – stemmed wine + tumblers)
 const MERLOT_IMAGES = {
-  empty: "/glasses/merlot/merlot-42.png",
+  empty: "/glasses/merlot/merlot-19.png",
   gallery: [
     { src: "/glasses/merlot/merlot-42.png", label: "Merlot 42cl" },
     { src: "/glasses/merlot/merlot-31.png", label: "Merlot 31cl" },
@@ -602,6 +602,81 @@ const ROCKY_STACK_SPECS: MaltaVariantSpec[] = [
   { productCode: "V0234 A12 R. STACK 28CL", capacityUS: "9¼ oz.", capacityImperial: "9¾ oz.", height: "86mm", diameter: "82,4mm", palletQuantity: "1,080 p.p.", ean: "8436536681987" },
 ];
 
+// Rome glass: images and modal content (Serie Rome – stemmed goblet)
+const ROME_IMAGES = {
+  empty: "/glasses/rome/rome-65.png",
+  gallery: [
+    { src: "/glasses/rome/rome-65.png", label: "Rome 65cl" },
+    { src: "/glasses/rome/rome-bodegon.png", label: "Rome Bodegón" },
+    { src: "/glasses/rome/rome-65-smoothie.png", label: "Rome 65cl Smoothie" },
+  ],
+};
+
+const SERIE_ROME_CONTENT = {
+  title: "Serie Rome",
+  subtitle: "Stemmed goblet",
+  description:
+    "The Rome series features an elegant stemmed glass with a broad, rounded bowl that tapers toward the rim—characteristic of a Burgundy or goblet style. Short, sturdy stem and circular base. Suited for red wine, cocktails with ice and garnishes, smoothies, and versatile beverage service in hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Broad rounded bowl, Burgundy-style",
+    "Short sturdy stem and stable base",
+    "Versatile for wine, cocktails, and smoothies",
+  ],
+};
+
+const ROME_SPECS: MaltaVariantSpec[] = [];
+
+// Roncal glass: images and modal content (tumblers / old-fashioned style)
+const RONCAL_IMAGES = {
+  empty: "/glasses/roncal/roncal-single.png",
+  gallery: [
+    { src: "/glasses/roncal/roncal-single.png", label: "Roncal" },
+    { src: "/glasses/roncal/roncal-familia.png", label: "Roncal Familia" },
+    { src: "/glasses/roncal/roncal-familia-2.png", label: "Roncal Familia 2" },
+    { src: "/glasses/roncal/roncal-bajo.png", label: "Roncal Bajo" },
+    { src: "/glasses/roncal/roncal-35fa.png", label: "Roncal 35FA" },
+  ],
+};
+
+const SERIE_RONCAL_CONTENT = {
+  title: "Serie Roncal",
+  subtitle: "Tumblers & lowball glasses",
+  description:
+    "The Roncal series offers clear, sturdy tumblers with a thick base and slightly tapered body—classic old-fashioned or rocks style. Suitable for spirits, cocktails, water, juice, and smoothies. Multiple sizes available in the family. Clean lines and everyday elegance for hospitality.",
+  features: [
+    "Clear, transparent glass",
+    "Thick base, sturdy construction",
+    "Slightly tapered conical shape",
+    "Versatile for spirits, cocktails, juice, and water",
+  ],
+};
+
+const RONCAL_SPECS: MaltaVariantSpec[] = [];
+
+// Samara glass: images and modal content (Serie Samara – stemmed wine goblet)
+const SAMARA_IMAGES = {
+  empty: "/glasses/samara/samara-58.png",
+  gallery: [
+    { src: "/glasses/samara/samara-58.png", label: "Samara 58cl" },
+  ],
+};
+
+const SERIE_SAMARA_CONTENT = {
+  title: "Serie Samara",
+  subtitle: "Stemmed wine goblet",
+  description:
+    "The Samara series features an elegant stemmed wine goblet in clear crystal. Classic U-shaped bowl, slender stem, and flat circular base. Suited for red and white wine in hospitality and dining.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Classic goblet shape with U-shaped bowl",
+    "Slender stem and stable base",
+    "Ideal for wine service",
+  ],
+};
+
+const SAMARA_SPECS: MaltaVariantSpec[] = [];
+
 type GlassModalContent = {
   title: string;
   subtitle: string;
@@ -619,8 +694,7 @@ type GlassType = {
 };
 
 const otherGlassNames = [
-  "Rome", "Roncal",
-  "Samara", "Sauvignon", "Seira", "SETS – Bodegon", "Stack", "Subirats", "Syrah", "T-Nonic", "T-Pinta",
+  "Sauvignon", "Seira", "SETS – Bodegon", "Stack", "Subirats", "Syrah", "T-Nonic", "T-Pinta",
   "Toscana", "Txikitero", "Valencia", "Valon", "Vermut", "Vintage", "Viura", "Xarel",
 ];
 
@@ -783,6 +857,36 @@ const glassTypes: GlassType[] = [
       ...SERIE_ROCKY_STACK_CONTENT,
       gallery: ROCKY_STACK_IMAGES.gallery,
       specs: ROCKY_STACK_SPECS,
+    },
+  },
+  {
+    name: "Rome",
+    emptyImage: ROME_IMAGES.empty,
+    filledImage: ROME_IMAGES.empty,
+    modalContent: {
+      ...SERIE_ROME_CONTENT,
+      gallery: ROME_IMAGES.gallery,
+      specs: ROME_SPECS,
+    },
+  },
+  {
+    name: "Roncal",
+    emptyImage: RONCAL_IMAGES.empty,
+    filledImage: RONCAL_IMAGES.empty,
+    modalContent: {
+      ...SERIE_RONCAL_CONTENT,
+      gallery: RONCAL_IMAGES.gallery,
+      specs: RONCAL_SPECS,
+    },
+  },
+  {
+    name: "Samara",
+    emptyImage: SAMARA_IMAGES.empty,
+    filledImage: SAMARA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_SAMARA_CONTENT,
+      gallery: SAMARA_IMAGES.gallery,
+      specs: SAMARA_SPECS,
     },
   },
   ...otherGlassNames.map((name) => ({
