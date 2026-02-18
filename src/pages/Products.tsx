@@ -677,6 +677,160 @@ const SERIE_SAMARA_CONTENT = {
 
 const SAMARA_SPECS: MaltaVariantSpec[] = [];
 
+// Seira glass: images and modal content (from uploaded folder Seira)
+const SEIRA_IMAGES = {
+  empty: "/glasses/Seira/seira%20family.jpg",
+  gallery: [
+    { src: "/glasses/Seira/seira%20family.jpg", label: "Seira Family" },
+    { src: "/glasses/Seira/Seira%20ambiente.jpg", label: "Seira Ambiente" },
+  ],
+};
+
+const SERIE_SEIRA_CONTENT = {
+  title: "Serie Seira",
+  subtitle: "Glassware collection",
+  description:
+    "The Seira series offers clear glassware for versatile beverage service. Elegant design suited for hospitality and dining.",
+  features: [
+    "Clear, transparent glass",
+    "Elegant design",
+    "Versatile for beverages",
+    "Suitable for hospitality",
+  ],
+};
+
+const SEIRA_SPECS: MaltaVariantSpec[] = [];
+
+// SETS – Bodegon: images and modal content (from uploaded folder SETS - Bodegon)
+const SETS_BODEGON_IMAGES = {
+  empty: "/glasses/SETS%20-%20Bodegon/uso%20licores%203.jpg",
+  gallery: [
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_048.jpg", label: "Bodegón 048" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_054.jpg", label: "Bodegón 054" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_074.jpg", label: "Bodegón 074" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_077.jpg", label: "Bodegón 077" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_117.jpg", label: "Bodegón 117" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_145.jpg", label: "Bodegón 145" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_148.jpg", label: "Bodegón 148" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_242.jpg", label: "Bodegón 242" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_276.jpg", label: "Bodegón 276" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_303.jpg", label: "Bodegón 303" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_331.jpg", label: "Bodegón 331" },
+    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_336.jpg", label: "Bodegón 336" },
+    { src: "/glasses/SETS%20-%20Bodegon/uso%20whisky.jpg", label: "Uso Whisky" },
+    { src: "/glasses/SETS%20-%20Bodegon/uso%20zumo.jpg", label: "Uso Zumo" },
+    { src: "/glasses/SETS%20-%20Bodegon/uso%20licores%203.jpg", label: "Uso Licores" },
+    { src: "/glasses/SETS%20-%20Bodegon/uso%20helado3.jpg", label: "Uso Helado" },
+  ],
+};
+
+const SERIE_SETS_BODEGON_CONTENT = {
+  title: "SETS – Bodegón",
+  subtitle: "Catalog sets & still-life",
+  description:
+    "Curated sets and bodegón-style imagery for catalog and display: wine, beer, champagne, cocktails, coffee, spirits, and refreshments. Multiple glass types and ambient shots for hospitality and retail.",
+  features: [
+    "Catalog and still-life imagery",
+    "Wine, beer, champagne, cocktails",
+    "Coffee, spirits, and refreshments",
+    "Ideal for catalogs and display",
+  ],
+};
+
+const SETS_BODEGON_SPECS: MaltaVariantSpec[] = [];
+
+// Subirats glass: images and modal content (from uploaded folder Subirats)
+const SUBIRATS_IMAGES = {
+  empty: "/glasses/Subirats/subirats%2017.jpg",
+  gallery: [
+    { src: "/glasses/Subirats/subirats%2017.jpg", label: "Subirats 17cl" },
+    { src: "/glasses/Subirats/subirats%20bodegon.jpg", label: "Subirats Bodegón" },
+    { src: "/glasses/Subirats/Ambiente-Subirats.jpg", label: "Ambiente Subirats" },
+  ],
+};
+
+const SERIE_SUBIRATS_CONTENT = {
+  title: "Serie Subirats",
+  subtitle: "Glassware collection",
+  description:
+    "The Subirats series offers clear glassware for versatile beverage service. Elegant design suited for hospitality and dining.",
+  features: [
+    "Clear, transparent glass",
+    "Elegant design",
+    "Versatile for beverages",
+    "Suitable for hospitality",
+  ],
+};
+
+const SUBIRATS_SPECS: MaltaVariantSpec[] = [];
+
+// Syrah glass: images and modal content (from uploaded folder Syrah)
+const SYRAH_IMAGES = {
+  empty: "/glasses/Syrah/syrah%2058.jpg",
+  gallery: [
+    { src: "/glasses/Syrah/syrah%2058.jpg", label: "Syrah 58cl" },
+    { src: "/glasses/Syrah/syrah%2047.jpg", label: "Syrah 47cl" },
+    { src: "/glasses/Syrah/syrah%2035.jpg", label: "Syrah 35cl" },
+    { src: "/glasses/Syrah/syrah%2025.jpg", label: "Syrah 25cl" },
+    { src: "/glasses/Syrah/syrah%2017.jpg", label: "Syrah 17cl" },
+    { src: "/glasses/Syrah/syrah%20familia.jpg", label: "Syrah Familia" },
+    { src: "/glasses/Syrah/syrah(conjunto).jpg", label: "Syrah Conjunto" },
+    { src: "/glasses/Syrah/V0244-V0245-Syrah.jpg", label: "V0244 V0245 Syrah" },
+    { src: "/glasses/Syrah/Ambiente-Syrah.jpg", label: "Ambiente Syrah" },
+    { src: "/glasses/Syrah/pinot%20vaso%2035.jpg", label: "Pinot Vaso 35" },
+    { src: "/glasses/Syrah/pinot%20vaso%2047.jpg", label: "Pinot Vaso 47" },
+  ],
+};
+
+const SERIE_SYRAH_CONTENT = {
+  title: "Serie Syrah",
+  subtitle: "Stemmed wine glasses",
+  description:
+    "The Syrah series features stemmed wine glasses in multiple sizes (17cl to 58cl). Clear crystal, elegant bowl and stem, suited for red and white wine in hospitality and dining.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Multiple sizes from 17cl to 58cl",
+    "Stemmed design",
+    "Ideal for wine service",
+  ],
+};
+
+const SYRAH_SPECS: MaltaVariantSpec[] = [];
+
+// Sauvignon glass: images and modal content (Serie Sauvignon – stemmed wine glasses)
+const SAUVIGNON_IMAGES = {
+  empty: "/glasses/sauvignon/sauvignon-58.png",
+  gallery: [
+    { src: "/glasses/sauvignon/sauvignon-58.png", label: "Sauvignon 58cl" },
+    { src: "/glasses/sauvignon/sauvignon-44.png", label: "Sauvignon 44cl" },
+    { src: "/glasses/sauvignon/sauvignon-35.png", label: "Sauvignon 35cl" },
+    { src: "/glasses/sauvignon/sauvignon-wine.png", label: "Sauvignon" },
+    { src: "/glasses/sauvignon/sauvignon-familia.png", label: "Sauvignon Familia" },
+    { src: "/glasses/sauvignon/sauvignon-ambiente.png", label: "Sauvignon Ambiente" },
+    { src: "/glasses/sauvignon/sauvignon-agua.png", label: "Sauvignon Agua" },
+    { src: "/glasses/sauvignon/sauvignon-champagne.png", label: "Sauvignon Champagne" },
+  ],
+};
+
+const SERIE_SAUVIGNON_CONTENT = {
+  title: "Serie Sauvignon",
+  subtitle: "Stemmed wine glasses",
+  description:
+    "The Sauvignon series offers stemmed wine glasses in clear crystal with a tulip-shaped bowl—ideal for white wine and aromas. Available in 58cl, 44cl, and 35cl. Slender stem and circular base, suited for wine, water, and champagne in hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Tulip-shaped bowl for white wine",
+    "58cl, 44cl, and 35cl variants",
+    "Suitable for wine, water, and champagne",
+  ],
+};
+
+const SAUVIGNON_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0765 AA6 SAUVIGNON 58CL", capacityUS: "19½ oz.", capacityImperial: "20¼ oz.", height: "232mm", diameter: "96,5mm", palletQuantity: "288 p.p.", ean: "8436536686357" },
+  { productCode: "V0764 AA6 SAUVIGNON 44CL", capacityUS: "14¾ oz.", capacityImperial: "15½ oz.", height: "224mm", diameter: "88mm", palletQuantity: "408 p.p.", ean: "8436536686340" },
+  { productCode: "V0763 AA6 SAUVIGNON 35CL", capacityUS: "11¾ oz.", capacityImperial: "12¼ oz.", height: "212mm", diameter: "80,5mm", palletQuantity: "630 p.p.", ean: "8436536686333" },
+];
+
 type GlassModalContent = {
   title: string;
   subtitle: string;
@@ -694,7 +848,7 @@ type GlassType = {
 };
 
 const otherGlassNames = [
-  "Sauvignon", "Seira", "SETS – Bodegon", "Stack", "Subirats", "Syrah", "T-Nonic", "T-Pinta",
+  "Stack", "T-Nonic", "T-Pinta",
   "Toscana", "Txikitero", "Valencia", "Valon", "Vermut", "Vintage", "Viura", "Xarel",
 ];
 
@@ -887,6 +1041,56 @@ const glassTypes: GlassType[] = [
       ...SERIE_SAMARA_CONTENT,
       gallery: SAMARA_IMAGES.gallery,
       specs: SAMARA_SPECS,
+    },
+  },
+  {
+    name: "Seira",
+    emptyImage: SEIRA_IMAGES.empty,
+    filledImage: SEIRA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_SEIRA_CONTENT,
+      gallery: SEIRA_IMAGES.gallery,
+      specs: SEIRA_SPECS,
+    },
+  },
+  {
+    name: "SETS – Bodegon",
+    emptyImage: SETS_BODEGON_IMAGES.empty,
+    filledImage: SETS_BODEGON_IMAGES.empty,
+    modalContent: {
+      ...SERIE_SETS_BODEGON_CONTENT,
+      gallery: SETS_BODEGON_IMAGES.gallery,
+      specs: SETS_BODEGON_SPECS,
+    },
+  },
+  {
+    name: "Subirats",
+    emptyImage: SUBIRATS_IMAGES.empty,
+    filledImage: SUBIRATS_IMAGES.empty,
+    modalContent: {
+      ...SERIE_SUBIRATS_CONTENT,
+      gallery: SUBIRATS_IMAGES.gallery,
+      specs: SUBIRATS_SPECS,
+    },
+  },
+  {
+    name: "Syrah",
+    emptyImage: SYRAH_IMAGES.empty,
+    filledImage: SYRAH_IMAGES.empty,
+    modalContent: {
+      ...SERIE_SYRAH_CONTENT,
+      gallery: SYRAH_IMAGES.gallery,
+      specs: SYRAH_SPECS,
+    },
+  },
+  {
+    name: "Sauvignon",
+    emptyImage: SAUVIGNON_IMAGES.empty,
+    filledImage: SAUVIGNON_IMAGES.empty,
+    modalContent: {
+      ...SERIE_SAUVIGNON_CONTENT,
+      gallery: SAUVIGNON_IMAGES.gallery,
+      specs: SAUVIGNON_SPECS,
     },
   },
   ...otherGlassNames.map((name) => ({
