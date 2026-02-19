@@ -765,7 +765,7 @@ const SERIE_SUBIRATS_CONTENT = {
 
 const SUBIRATS_SPECS: MaltaVariantSpec[] = [];
 
-// Syrah glass: images and modal content (from uploaded folder Syrah)
+// Syrah glass: images and modal content (from uploaded folder Syrah). Gallery kept to smaller images to avoid modal slowdown; syrah(conjunto).jpg (~7.8MB) excluded.
 const SYRAH_IMAGES = {
   empty: "/glasses/Syrah/syrah%2058.jpg",
   gallery: [
@@ -774,12 +774,11 @@ const SYRAH_IMAGES = {
     { src: "/glasses/Syrah/syrah%2035.jpg", label: "Syrah 35cl" },
     { src: "/glasses/Syrah/syrah%2025.jpg", label: "Syrah 25cl" },
     { src: "/glasses/Syrah/syrah%2017.jpg", label: "Syrah 17cl" },
-    { src: "/glasses/Syrah/syrah%20familia.jpg", label: "Syrah Familia" },
-    { src: "/glasses/Syrah/syrah(conjunto).jpg", label: "Syrah Conjunto" },
     { src: "/glasses/Syrah/V0244-V0245-Syrah.jpg", label: "V0244 V0245 Syrah" },
     { src: "/glasses/Syrah/Ambiente-Syrah.jpg", label: "Ambiente Syrah" },
     { src: "/glasses/Syrah/pinot%20vaso%2035.jpg", label: "Pinot Vaso 35" },
     { src: "/glasses/Syrah/pinot%20vaso%2047.jpg", label: "Pinot Vaso 47" },
+    { src: "/glasses/Syrah/syrah%20familia.jpg", label: "Syrah Familia" },
   ],
 };
 
@@ -1909,6 +1908,8 @@ const Products = () => {
                           <img
                             src={item.src}
                             alt={item.label}
+                            loading="lazy"
+                            decoding="async"
                             className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                           />
                         </div>

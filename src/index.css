@@ -155,3 +155,34 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Custom orange scrollbar - applies to all scrollable elements */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary)) hsl(var(--muted));
+}
+
+/* WebKit (Chrome, Safari, Edge) scrollbar */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 10px;
+  border: 2px solid hsl(var(--muted));
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: hsl(18 81% 48%);
+}
+
+*::-webkit-scrollbar-corner {
+  background: hsl(var(--muted));
+}
