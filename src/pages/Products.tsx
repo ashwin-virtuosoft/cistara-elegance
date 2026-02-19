@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 import {
@@ -1605,9 +1606,17 @@ const allProducts = [
 const categories = ["All", "Wine & Champagne", "Spirits & Liquor", "Beer", "Café Essentials", "Buffet & Kitchen"];
 
 const Products = () => {
+  const location = useLocation();
   const [active, setActive] = useState("All");
   const [glassModal, setGlassModal] = useState<GlassModalContent | null>(null);
   const filtered = active === "All" ? allProducts : allProducts.filter((p) => p.category === active);
+
+  useEffect(() => {
+    if (location.hash === "#glasses") {
+      const el = document.getElementById("glasses");
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [location.pathname, location.hash]);
 
   return (
     <Layout>
@@ -1682,7 +1691,7 @@ const Products = () => {
       </section>
 
       {/* Glasses section */}
-      <section className="section-padding bg-secondary/30 relative overflow-hidden">
+      <section id="glasses" className="section-padding bg-secondary/30 relative overflow-hidden scroll-mt-24">
         {/* Subtle background accent */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.03]" aria-hidden>
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full bg-primary blur-3xl" />

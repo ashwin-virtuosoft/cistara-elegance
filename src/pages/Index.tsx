@@ -20,11 +20,12 @@ const fadeUp = {
 };
 
 const categories = [
-  { title: "Wine & Champagne", image: wineImg, desc: "Elegant stemware for fine dining" },
-  { title: "Spirits & Liquor", image: spiritsImg, desc: "Crystal-clear barware collection" },
-  { title: "Beer Glassware", image: beerImg, desc: "Premium craft beer glasses" },
-  { title: "Café Essentials", image: cafeImg, desc: "Refined coffee & tea service" },
-  { title: "Buffet & Kitchen", image: buffetImg, desc: "Professional buffet & kitchen equipment" },
+  { title: "Variants of Glass", image: heroImg, desc: "Explore our glassware collection", link: "/products#glasses" },
+  { title: "Wine & Champagne", image: wineImg, desc: "Elegant stemware for fine dining", link: "/products" },
+  { title: "Spirits & Liquor", image: spiritsImg, desc: "Crystal-clear barware collection", link: "/products" },
+  { title: "Beer Glassware", image: beerImg, desc: "Premium craft beer glasses", link: "/products" },
+  { title: "Café Essentials", image: cafeImg, desc: "Refined coffee & tea service", link: "/products" },
+  { title: "Buffet & Kitchen", image: buffetImg, desc: "Professional buffet & kitchen equipment", link: "/products" },
 ];
 
 const features = [
@@ -122,7 +123,7 @@ const Index = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.15 }}
-          className="text-xl font-medium  font-serif leading-relaxed"
+          className="text-2xl font-semibold  font-serif leading-relaxed"
         >
           We are a trusted supplier of quality-driven, complete solutions for upscale hotels,
           fine dining restaurants, and catering sectors — combining practical excellence with
@@ -152,7 +153,7 @@ const Index = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
-              <Link to="/products" className="group block">
+              <Link to={cat.link ?? "/products"} className="group block">
                 <div className="relative overflow-hidden rounded-xl aspect-[3/4] mb-4">
                   <img
                     src={cat.image}
