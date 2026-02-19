@@ -106,16 +106,6 @@ const Footer = () => {
             <Instagram size={20} />
           </a>
 
-          {/* Twitter/X */}
-          <a 
-            href="https://twitter.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-black flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-2xl text-white"
-            title="Twitter"
-          >
-            <Twitter size={20} />
-          </a>
 
         </div>
       </div>

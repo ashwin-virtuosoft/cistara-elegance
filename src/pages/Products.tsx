@@ -831,6 +831,370 @@ const SAUVIGNON_SPECS: MaltaVariantSpec[] = [
   { productCode: "V0763 AA6 SAUVIGNON 35CL", capacityUS: "11¾ oz.", capacityImperial: "12¼ oz.", height: "212mm", diameter: "80,5mm", palletQuantity: "630 p.p.", ean: "8436536686333" },
 ];
 
+// Copa Stack (stemmed goblet): images and modal content
+const COPA_STACK_IMAGES = {
+  empty: "/glasses/stack-copa/copa-stack-25.png",
+  gallery: [
+    { src: "/glasses/stack-copa/copa-stack-25.png", label: "Copa Stack 25cl" },
+    { src: "/glasses/stack-copa/copa-stack-19.png", label: "Copa Stack 19cl" },
+    { src: "/glasses/stack-copa/copa-stack-single.png", label: "Copa Stack" },
+    { src: "/glasses/stack-copa/copa-stack-familia.png", label: "Copa Stack Familia" },
+    { src: "/glasses/stack-copa/copa-stack-ambiente.png", label: "Copa Stack Ambiente" },
+  ],
+};
+
+const SERIE_COPA_STACK_CONTENT = {
+  title: "Serie Stack – Copa",
+  subtitle: "Stemmed stackable goblets",
+  description:
+    "The Copa Stack series features stemmed goblets with a wide bowl, short stem, and round base, designed for stacking. Clear crystal, 25cl and 19cl. Ideal for wine, water, and cocktails in hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Stemmed goblet, stackable design",
+    "25cl and 19cl variants",
+    "Suitable for wine, water, and cocktails",
+  ],
+};
+
+const COPA_STACK_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0240 AA12 STACK 25CL", capacityUS: "8¼ oz.", capacityImperial: "8¾ oz.", height: "117mm", diameter: "75,5mm", palletQuantity: "1,152 p.p.", ean: "8436536682045" },
+  { productCode: "V0241 AA12 STACK 19CL", capacityUS: "6¼ oz.", capacityImperial: "6½ oz.", height: "110mm", diameter: "70mm", palletQuantity: "1,404 p.p.", ean: "8436536682052" },
+];
+
+// Vaso Stack (tumbler): images and modal content
+const VASO_STACK_IMAGES = {
+  empty: "/glasses/stack-vaso/vaso-stack-25.png",
+  gallery: [
+    { src: "/glasses/stack-vaso/vaso-stack-25.png", label: "Vaso Stack 25cl" },
+    { src: "/glasses/stack-vaso/vaso-stack-18.png", label: "Vaso Stack 18cl" },
+    { src: "/glasses/stack-vaso/vaso-stack-12.png", label: "Vaso Stack 12cl" },
+    { src: "/glasses/stack-vaso/vaso-stack-single.png", label: "Vaso Stack" },
+    { src: "/glasses/stack-vaso/vaso-stack-ambiente.png", label: "Vaso Stack Ambiente" },
+  ],
+};
+
+const SERIE_VASO_STACK_CONTENT = {
+  title: "Serie Stack – Vaso",
+  subtitle: "Stackable tumblers",
+  description:
+    "The Vaso Stack series features clear stackable tumblers with a flared shape and ridge for nesting. Stemless, sturdy base. Available in 25cl, 18cl, and 12cl. Ideal for juice, water, and soft drinks in bars and hospitality.",
+  features: [
+    "Clear, transparent glass",
+    "Stackable tumbler design",
+    "25cl, 18cl, and 12cl variants",
+    "Suitable for juice, water, and soft drinks",
+  ],
+};
+
+const VASO_STACK_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0281 A12 STACK 25CL", capacityUS: "8¼ oz.", capacityImperial: "8¾ oz.", height: "86mm", diameter: "80mm", palletQuantity: "1,080 p.p.", ean: "8436536682441" },
+  { productCode: "V0274 YP12 STACK 18CL", capacityUS: "6 oz.", capacityImperial: "6¼ oz.", height: "79mm", diameter: "71mm", palletQuantity: "1,872 p.p.", ean: "8436536682380" },
+  { productCode: "V0288 YP12 STACK 12CL", capacityUS: "4 oz.", capacityImperial: "4¼ oz.", height: "75mm", diameter: "62mm", palletQuantity: "1,872 p.p.", ean: "8436536682502" },
+];
+
+// T-Nonic glass: images and modal content (nonic pint glass)
+const T_NONIC_IMAGES = {
+  empty: "/glasses/t-nonic/t-nonic-56.png",
+  gallery: [
+    { src: "/glasses/t-nonic/t-nonic-56.png", label: "T-Nonic 56cl" },
+    { src: "/glasses/t-nonic/t-nonic-47.png", label: "T-Nonic 47cl" },
+    { src: "/glasses/t-nonic/t-nonic-28.png", label: "T-Nonic 28cl" },
+    { src: "/glasses/t-nonic/t-nonic-bodegon.png", label: "T-Nonic Bodegón" },
+    { src: "/glasses/t-nonic/t-nonic-refresco.png", label: "T-Nonic Refresco" },
+  ],
+};
+
+const SERIE_T_NONIC_CONTENT = {
+  title: "Serie T-Nonic",
+  subtitle: "Nonic pint glass",
+  description:
+    "The T-Nonic series features clear nonic pint glasses with the distinctive bulge below the rim for grip and stacking. Available in 56cl, 47cl, and 28cl. Ideal for beer, cider, and refreshing drinks in bars and hospitality.",
+  features: [
+    "Clear, transparent glass",
+    "Nonic bulge below rim for grip",
+    "56cl, 47cl, and 28cl variants",
+    "Ideal for beer, cider, and soft drinks",
+  ],
+};
+
+const T_NONIC_SPECS: MaltaVariantSpec[] = [];
+
+// T-Pinta glass: images and modal content (tumbler / pint style)
+const T_PINTA_IMAGES = {
+  empty: "/glasses/t-pinta/t-pinta-33.png",
+  gallery: [
+    { src: "/glasses/t-pinta/t-pinta-33.png", label: "T-Pinta 33cl" },
+    { src: "/glasses/t-pinta/t-pinta-ambiente.png", label: "T-Pinta Ambiente" },
+  ],
+};
+
+const SERIE_T_PINTA_CONTENT = {
+  title: "Serie T-Pinta",
+  subtitle: "Tumbler / pint glass",
+  description:
+    "The T-Pinta series offers clear tumblers with a sturdy base and slightly tapered shape—classic pint style. Suited for spirits, whiskey, and long drinks in bars and hospitality.",
+  features: [
+    "Clear, transparent glass",
+    "Sturdy base, tumbler shape",
+    "Classic pint style",
+    "Ideal for spirits and long drinks",
+  ],
+};
+
+const T_PINTA_SPECS: MaltaVariantSpec[] = [];
+
+// Txikitero glass: images and modal content (small faceted tumbler / shot style)
+const TXIKITERO_IMAGES = {
+  empty: "/glasses/txikitero/txikitero-individual.png",
+  gallery: [
+    { src: "/glasses/txikitero/txikitero-individual.png", label: "Txikitero" },
+    { src: "/glasses/txikitero/txikitero-vaso.png", label: "Txikitero Vaso" },
+    { src: "/glasses/txikitero/txikitero-bodegon.png", label: "Txikitero Bodegón" },
+    { src: "/glasses/txikitero/txikitero-catalog.png", label: "Txikitero 12cl" },
+  ],
+};
+
+const SERIE_TXIKITERO_CONTENT = {
+  title: "Serie Txikitero",
+  subtitle: "Small faceted tumbler",
+  description:
+    "The Txikitero series features small clear tumblers with vertical fluting on the lower section and a smooth rim. 12cl capacity. Versatile for wine, spirits, and tapas. Ideal for Basque-style txikiteo and hospitality.",
+  features: [
+    "Clear, transparent glass",
+    "Faceted lower section, smooth rim",
+    "12cl capacity",
+    "Ideal for wine, spirits, and tapas",
+  ],
+};
+
+const TXIKITERO_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0898 FA6 TXIKITERO 12CL", capacityUS: "4 oz.", capacityImperial: "4½ oz.", height: "95mm", diameter: "80mm", palletQuantity: "840 p.p.", ean: "8436536687415" },
+];
+
+// Valencia glass: images and modal content (stemmed goblets – multiple shapes)
+const VALENCIA_IMAGES = {
+  empty: "/glasses/valencia/valencia-23.png",
+  gallery: [
+    { src: "/glasses/valencia/valencia-23.png", label: "Valencia 23cl" },
+    { src: "/glasses/valencia/valencia-20.png", label: "Valencia 20cl" },
+    { src: "/glasses/valencia/valencia-19.png", label: "Valencia 19cl" },
+    { src: "/glasses/valencia/valencia-15.png", label: "Valencia 15cl" },
+    { src: "/glasses/valencia/valencia-familia.png", label: "Valencia Familia" },
+    { src: "/glasses/valencia/valencia-ambiente.png", label: "Valencia Ambiente" },
+    { src: "/glasses/valencia/valencia-catalog.png", label: "Valencia Catálogo" },
+  ],
+};
+
+const SERIE_VALENCIA_CONTENT = {
+  title: "Serie Valencia",
+  subtitle: "Stemmed goblets",
+  description:
+    "The Valencia series offers stemmed goblets in several shapes and sizes—from wide rounded bowls to tall slender pilsner-style and flute-style. 23cl, 20cl, 19cl, and 15cl. Clear crystal for wine, water, and beer in hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Multiple shapes: wide bowl, slender, flute-style",
+    "23cl, 20cl, 19cl, and 15cl variants",
+    "Suitable for wine, water, and beer",
+  ],
+};
+
+const VALENCIA_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0113 AA12 VALENCIA 23CL", capacityUS: "7¾ oz.", capacityImperial: "8 oz.", height: "121mm", diameter: "73,5mm", palletQuantity: "1,152 p.p.", ean: "8436536680744" },
+  { productCode: "V0261 AA12 VALENCIA 19CL", capacityUS: "6¼ oz.", capacityImperial: "6½ oz.", height: "118mm", diameter: "69,5mm", palletQuantity: "1,248 p.p.", ean: "8436536682281" },
+  { productCode: "V0112 AA12 VALENCIA 20CL", capacityUS: "6¾ oz.", capacityImperial: "7 oz.", height: "150mm", diameter: "63mm", palletQuantity: "1,296 p.p.", ean: "8436536680737" },
+  { productCode: "V0111 AA12 VALENCIA 15CL", capacityUS: "5 oz.", capacityImperial: "5¼ oz.", height: "151mm", diameter: "54,3mm", palletQuantity: "1,512 p.p.", ean: "8436536680720" },
+];
+
+// Valon glass: images and modal content (stemmed goblets – wide rounded bowl)
+const VALON_IMAGES = {
+  empty: "/glasses/valon/valon-25.png",
+  gallery: [
+    { src: "/glasses/valon/valon-25.png", label: "Valon 25cl" },
+    { src: "/glasses/valon/valon-19.png", label: "Valon 19cl" },
+    { src: "/glasses/valon/valon-15.png", label: "Valon 15cl" },
+    { src: "/glasses/valon/valon-catalog.png", label: "Valon Catálogo" },
+    { src: "/glasses/valon/valon-ambiente.png", label: "Valon Ambiente" },
+    { src: "/glasses/valon/valon-ambiente-2.png", label: "Valon Ambiente 2" },
+  ],
+};
+
+const SERIE_VALON_CONTENT = {
+  title: "Serie Valon",
+  subtitle: "Stemmed goblets",
+  description:
+    "The Valon series features stemmed goblets with a wide, rounded bowl that tapers slightly toward the rim. Clear crystal in 25cl, 19cl, and 15cl. Suited for wine and spirits that benefit from aeration. Short sturdy stem and circular base.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Wide rounded bowl for aeration",
+    "25cl, 19cl, and 15cl variants",
+    "Suitable for wine and spirits",
+  ],
+};
+
+const VALON_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0067 AA12 VALON 25CL", capacityUS: "8¼ oz.", capacityImperial: "8¾ oz.", height: "138mm", diameter: "83mm", palletQuantity: "756 p.p.", ean: "8436536680355" },
+  { productCode: "V0077 AA12 VALON 19CL", capacityUS: "6¼ oz.", capacityImperial: "6½ oz.", height: "129mm", diameter: "76mm", palletQuantity: "1,008 p.p.", ean: "8436536680348" },
+  { productCode: "V0089 AA12 VALON 15CL", capacityUS: "5 oz.", capacityImperial: "5¼ oz.", height: "118mm", diameter: "71mm", palletQuantity: "1,248 p.p.", ean: "8436536680331" },
+];
+
+// Vermut glass: images and modal content (vermouth glass – footed tumbler)
+const VERMUT_IMAGES = {
+  empty: "/glasses/vermut/vermut-24.png",
+  gallery: [
+    { src: "/glasses/vermut/vermut-24.png", label: "Vermut 24cl" },
+    { src: "/glasses/vermut/vermut-catalog.png", label: "Vermut Catálogo" },
+    { src: "/glasses/vermut/vermut-bodegon.png", label: "Vermut Bodegón" },
+    { src: "/glasses/vermut/vermut-familia.png", label: "Vermut Familia" },
+  ],
+};
+
+const SERIE_VERMUT_CONTENT = {
+  title: "Serie Vermut",
+  subtitle: "Vermouth glass",
+  description:
+    "The Vermut series features a classic vermouth glass with a flared rim, gently tapered bowl with subtle vertical fluting, and a short foot. 24cl capacity. Clear crystal, ideal for vermouth, aperitifs, and tapas in hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Classic vermouth shape, flared rim",
+    "24cl capacity",
+    "Ideal for vermouth and aperitifs",
+  ],
+};
+
+const VERMUT_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0538 YP12 VERMUT 24CL", capacityUS: "8 oz.", capacityImperial: "8¼ oz.", height: "111mm", diameter: "75mm", palletQuantity: "1,296 p.p.", ean: "8436536689808" },
+];
+
+// Vintage glass: images and modal content (stemmed wine glasses & flute)
+const VINTAGE_IMAGES = {
+  empty: "/glasses/vintage/vintage-56.png",
+  gallery: [
+    { src: "/glasses/vintage/vintage-56.png", label: "Vintage 56cl" },
+    { src: "/glasses/vintage/vintage-25.png", label: "Vintage 25cl" },
+    { src: "/glasses/vintage/vintage-20.png", label: "Vintage 20cl" },
+    { src: "/glasses/vintage/vintage-19.png", label: "Vintage 19cl Flute" },
+    { src: "/glasses/vintage/vintage-56-uso.png", label: "Vintage 56cl Uso" },
+    { src: "/glasses/vintage/vintage-familia.png", label: "Vintage Familia" },
+    { src: "/glasses/vintage/vintage-ambiente.png", label: "Vintage Ambiente" },
+    { src: "/glasses/vintage/vintage-catalog.png", label: "Vintage Catálogo" },
+  ],
+};
+
+const SERIE_VINTAGE_CONTENT = {
+  title: "Serie Vintage",
+  subtitle: "Stemmed wine glasses & flute",
+  description:
+    "The Vintage series offers stemmed glassware in six sizes: wide-bowled wine glasses (56cl to 20cl) and a tall champagne flute (19cl). Clear crystal for red wine, white wine, and sparkling. Classic, timeless design for hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Wine glasses 56cl to 20cl, plus 19cl flute",
+    "Wide bowl for red, slender for white and sparkling",
+    "Suitable for wine and champagne",
+  ],
+};
+
+const VINTAGE_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0759 AA6 VINTAGE 56CL", capacityUS: "18¾ oz.", capacityImperial: "19½ oz.", height: "217mm", diameter: "96,5mm", palletQuantity: "288 p.p.", ean: "8436536686296" },
+  { productCode: "V0758 AA6 VINTAGE 42CL", capacityUS: "14 oz.", capacityImperial: "14¾ oz.", height: "205mm", diameter: "88mm", palletQuantity: "510 p.p.", ean: "8436536686289" },
+  { productCode: "V0757 AA6 VINTAGE 32CL", capacityUS: "10¾ oz.", capacityImperial: "11¼ oz.", height: "197mm", diameter: "80,5mm", palletQuantity: "630 p.p.", ean: "8436536686272" },
+  { productCode: "V0756 AA6 VINTAGE 25CL", capacityUS: "8¼ oz.", capacityImperial: "8¾ oz.", height: "187mm", diameter: "74,5mm", palletQuantity: "750 p.p.", ean: "8436536686265" },
+  { productCode: "V0755 AA6 VINTAGE 20CL", capacityUS: "6¾ oz.", capacityImperial: "7 oz.", height: "180mm", diameter: "69,5mm", palletQuantity: "780 p.p.", ean: "8436536686258" },
+  { productCode: "V0754 AA6 VINTAGE 19CL", capacityUS: "6¼ oz.", capacityImperial: "6½ oz.", height: "210mm", diameter: "60,5mm", palletQuantity: "1,080 p.p.", ean: "8436536686241" },
+];
+
+// Viura glass: images and modal content (stemmed wine glasses & flute)
+const VIURA_IMAGES = {
+  empty: "/glasses/viura/viura-42.png",
+  gallery: [
+    { src: "/glasses/viura/viura-42.png", label: "Viura 42cl" },
+    { src: "/glasses/viura/viura-30.png", label: "Viura 30cl" },
+    { src: "/glasses/viura/viura-23.png", label: "Viura 23cl" },
+    { src: "/glasses/viura/viura-catalog.png", label: "Viura Catálogo" },
+    { src: "/glasses/viura/viura-ambiente.png", label: "Viura Ambiente" },
+    { src: "/glasses/viura/viura-ambiente-2.png", label: "Viura Ambiente 2" },
+    { src: "/glasses/viura/viura-ambiente-3.png", label: "Viura Ambiente 3" },
+  ],
+};
+
+const SERIE_VIURA_CONTENT = {
+  title: "Serie Viura",
+  subtitle: "Stemmed wine glasses & flute",
+  description:
+    "The Viura series offers stemmed wine glasses in five sizes—from wide-bowled 53cl to compact 23cl and a tall 17cl flute. Clear crystal for red wine, white wine, and sparkling. Classic rounded bowls and slender stems for hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Wine glasses 53cl to 23cl, plus 17cl flute",
+    "Rounded bowl and slender stem",
+    "Suitable for wine and sparkling",
+  ],
+};
+
+const VIURA_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0182 AA6 VIURA 53CL", capacityUS: "17¾ oz.", capacityImperial: "18½ oz.", height: "220mm", diameter: "91,4mm", palletQuantity: "384 p.p.", ean: "8436536681314" },
+  { productCode: "V0110 AA12 VIURA 42CL", capacityUS: "14 oz.", capacityImperial: "14¾ oz.", height: "212mm", diameter: "85mm", palletQuantity: "384 p.p.", ean: "8436536680676" },
+  { productCode: "V0109 AA12 VIURA 30CL", capacityUS: "10 oz.", capacityImperial: "10½ oz.", height: "195,5mm", diameter: "76,5mm", palletQuantity: "720 p.p.", ean: "8436536680713" },
+  { productCode: "V0108 AA12 VIURA 23CL", capacityUS: "7¾ oz.", capacityImperial: "8 oz.", height: "177mm", diameter: "69,5mm", palletQuantity: "780 p.p.", ean: "8436536680706" },
+  { productCode: "V0107 AA12 VIURA 17CL", capacityUS: "5¾ oz.", capacityImperial: "6 oz.", height: "192mm", diameter: "60,5mm", palletQuantity: "1,080 p.p.", ean: "8436536680690" },
+];
+
+// Xarel glass: images and modal content (champagne flute)
+const XAREL_IMAGES = {
+  empty: "/glasses/xarel/xarel-17.png",
+  gallery: [
+    { src: "/glasses/xarel/xarel-17.png", label: "Xarel 17cl" },
+    { src: "/glasses/xarel/xarel-catalog.png", label: "Xarel Catálogo" },
+    { src: "/glasses/xarel/xarel-ambiente-2.png", label: "Xarel Ambiente 2" },
+    { src: "/glasses/xarel/xarel-ambiente-cat.png", label: "Xarel Ambiente Cat" },
+  ],
+};
+
+const SERIE_XAREL_CONTENT = {
+  title: "Serie Xarel",
+  subtitle: "Champagne flute",
+  description:
+    "The Xarel series features a tall, slender champagne flute in clear crystal. 17cl capacity. Elongated bowl to preserve effervescence, slender stem, and circular base. Ideal for champagne and sparkling wine in hospitality.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Champagne flute design",
+    "17cl capacity",
+    "Ideal for champagne and sparkling wine",
+  ],
+};
+
+const XAREL_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0201 AA12 XAREL 17CL", capacityUS: "5¾ oz.", capacityImperial: "6 oz.", height: "221mm", diameter: "70,5mm", palletQuantity: "624 p.p.", ean: "8436536681512" },
+];
+
+// Toscana glass: images and modal content (stemmed goblet, wine/beer)
+const TOSCANA_IMAGES = {
+  empty: "/glasses/toscana/toscana-62.png",
+  gallery: [
+    { src: "/glasses/toscana/toscana-62.png", label: "Toscana 62cl" },
+    { src: "/glasses/toscana/toscana-41.png", label: "Toscana 41cl" },
+    { src: "/glasses/toscana/toscana-single.png", label: "Toscana" },
+    { src: "/glasses/toscana/toscana-ambiente.png", label: "Toscana Ambiente" },
+    { src: "/glasses/toscana/toscana-ambiente-2.png", label: "Toscana Ambiente 2" },
+  ],
+};
+
+const SERIE_TOSCANA_CONTENT = {
+  title: "Serie Toscana",
+  subtitle: "Stemmed goblet",
+  description:
+    "The Toscana series offers a stemmed goblet with a wide, rounded bowl, short sturdy stem, and circular base. Clear crystal, ideal for wine, water, or beer in hospitality. Available in 62cl and 41cl capacities.",
+  features: [
+    "Clear, transparent crystal glass",
+    "Wide rounded bowl, short stem",
+    "62cl and 41cl variants",
+    "Suitable for wine, water, and beer",
+  ],
+};
+
+const TOSCANA_SPECS: MaltaVariantSpec[] = [
+  { productCode: "V0294 AA6 TOSCANA 62CL", capacityUS: "20¾ oz.", capacityImperial: "21¾ oz.", height: "167mm", diameter: "108,5mm", palletQuantity: "396 p.p.", ean: "8436536682564" },
+  { productCode: "V0293 AA6 TOSCANA 41CL", capacityUS: "13¾ oz.", capacityImperial: "14 oz.", height: "148mm", diameter: "95,7mm", palletQuantity: "672 p.p.", ean: "8436536682557" },
+];
+
 type GlassModalContent = {
   title: string;
   subtitle: string;
@@ -847,9 +1211,7 @@ type GlassType = {
   modalContent?: GlassModalContent;
 };
 
-const otherGlassNames = [
-  "Stack", "T-Nonic", "T-Pinta",
-  "Toscana", "Txikitero", "Valencia", "Valon", "Vermut", "Vintage", "Viura", "Xarel",
+const otherGlassNames: string[] = [
 ];
 
 const glassTypes: GlassType[] = [
@@ -1091,6 +1453,126 @@ const glassTypes: GlassType[] = [
       ...SERIE_SAUVIGNON_CONTENT,
       gallery: SAUVIGNON_IMAGES.gallery,
       specs: SAUVIGNON_SPECS,
+    },
+  },
+  {
+    name: "Copa Stack",
+    emptyImage: COPA_STACK_IMAGES.empty,
+    filledImage: COPA_STACK_IMAGES.empty,
+    modalContent: {
+      ...SERIE_COPA_STACK_CONTENT,
+      gallery: COPA_STACK_IMAGES.gallery,
+      specs: COPA_STACK_SPECS,
+    },
+  },
+  {
+    name: "Vaso Stack",
+    emptyImage: VASO_STACK_IMAGES.empty,
+    filledImage: VASO_STACK_IMAGES.empty,
+    modalContent: {
+      ...SERIE_VASO_STACK_CONTENT,
+      gallery: VASO_STACK_IMAGES.gallery,
+      specs: VASO_STACK_SPECS,
+    },
+  },
+  {
+    name: "T-Nonic",
+    emptyImage: T_NONIC_IMAGES.empty,
+    filledImage: T_NONIC_IMAGES.empty,
+    modalContent: {
+      ...SERIE_T_NONIC_CONTENT,
+      gallery: T_NONIC_IMAGES.gallery,
+      specs: T_NONIC_SPECS,
+    },
+  },
+  {
+    name: "T-Pinta",
+    emptyImage: T_PINTA_IMAGES.empty,
+    filledImage: T_PINTA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_T_PINTA_CONTENT,
+      gallery: T_PINTA_IMAGES.gallery,
+      specs: T_PINTA_SPECS,
+    },
+  },
+  {
+    name: "Txikitero",
+    emptyImage: TXIKITERO_IMAGES.empty,
+    filledImage: TXIKITERO_IMAGES.empty,
+    modalContent: {
+      ...SERIE_TXIKITERO_CONTENT,
+      gallery: TXIKITERO_IMAGES.gallery,
+      specs: TXIKITERO_SPECS,
+    },
+  },
+  {
+    name: "Valencia",
+    emptyImage: VALENCIA_IMAGES.empty,
+    filledImage: VALENCIA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_VALENCIA_CONTENT,
+      gallery: VALENCIA_IMAGES.gallery,
+      specs: VALENCIA_SPECS,
+    },
+  },
+  {
+    name: "Valon",
+    emptyImage: VALON_IMAGES.empty,
+    filledImage: VALON_IMAGES.empty,
+    modalContent: {
+      ...SERIE_VALON_CONTENT,
+      gallery: VALON_IMAGES.gallery,
+      specs: VALON_SPECS,
+    },
+  },
+  {
+    name: "Vermut",
+    emptyImage: VERMUT_IMAGES.empty,
+    filledImage: VERMUT_IMAGES.empty,
+    modalContent: {
+      ...SERIE_VERMUT_CONTENT,
+      gallery: VERMUT_IMAGES.gallery,
+      specs: VERMUT_SPECS,
+    },
+  },
+  {
+    name: "Vintage",
+    emptyImage: VINTAGE_IMAGES.empty,
+    filledImage: VINTAGE_IMAGES.empty,
+    modalContent: {
+      ...SERIE_VINTAGE_CONTENT,
+      gallery: VINTAGE_IMAGES.gallery,
+      specs: VINTAGE_SPECS,
+    },
+  },
+  {
+    name: "Viura",
+    emptyImage: VIURA_IMAGES.empty,
+    filledImage: VIURA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_VIURA_CONTENT,
+      gallery: VIURA_IMAGES.gallery,
+      specs: VIURA_SPECS,
+    },
+  },
+  {
+    name: "Xarel",
+    emptyImage: XAREL_IMAGES.empty,
+    filledImage: XAREL_IMAGES.empty,
+    modalContent: {
+      ...SERIE_XAREL_CONTENT,
+      gallery: XAREL_IMAGES.gallery,
+      specs: XAREL_SPECS,
+    },
+  },
+  {
+    name: "Toscana",
+    emptyImage: TOSCANA_IMAGES.empty,
+    filledImage: TOSCANA_IMAGES.empty,
+    modalContent: {
+      ...SERIE_TOSCANA_CONTENT,
+      gallery: TOSCANA_IMAGES.gallery,
+      specs: TOSCANA_SPECS,
     },
   },
   ...otherGlassNames.map((name) => ({
