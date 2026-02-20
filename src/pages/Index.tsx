@@ -20,6 +20,28 @@ const fadeUp = {
   }),
 };
 
+const heroContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.12, delayChildren: 0.2 },
+  },
+};
+
+const heroItem = {
+  hidden: { opacity: 0, y: 28 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeOut" as const },
+  },
+};
+
+const cardHover = { scale: 1.02, y: -4 };
+const cardTap = { scale: 0.98 };
+const btnHover = { scale: 1.05 };
+const btnTap = { scale: 0.97 };
+
 const categories = [
   { title: "Variants of Glass", image: heroImg, desc: "Explore our glassware collection", link: "/products#glasses" },
   { title: "Wine & Champagne", image: wineImg, desc: "Elegant stemware for fine dining", link: "/products" },
@@ -69,21 +91,28 @@ const Index = () => {
             alt="Premium glassware"
             className="w-full h-full object-cover object-center"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            animate={{
+              opacity: 1,
+              scale: [1, 1.03, 1],
+            }}
+            transition={{
+              opacity: { duration: 1, delay: 0.2 },
+              scale: { duration: 12, ease: "easeInOut", repeat: Infinity, repeatDelay: 2 },
+            }}
           />
         </motion.div>
 
         <div className="container mx-auto px-4 relative z-10 pt-20">
           <motion.div
+            variants={heroContainer}
             initial="hidden"
             animate="visible"
             className="max-w-2xl"
           >
-            <motion.p variants={fadeUp} custom={0} className="text-primary font-bold tracking-widest uppercase text-xl mb-4">
+            <motion.p variants={heroItem} className="text-primary font-bold tracking-widest uppercase text-xl mb-4">
               Cistara International FZE
             </motion.p>
-            <div className="h-[120px] md:h-[160px] mb-4 overflow-hidden">
+            <motion.div variants={heroItem} className="h-[120px] md:h-[160px] mb-4 overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.h1
                   key={headlineIndex}
@@ -97,23 +126,27 @@ const Index = () => {
                   <span className="text-[#E76439]">{heroHeadlines[headlineIndex].highlight}</span>
                 </motion.h1>
               </AnimatePresence>
-            </div>
-            <motion.p variants={fadeUp} custom={2} className="text-2xl font-semibold font-serif  mb-8 italic">
+            </motion.div>
+            <motion.p variants={heroItem} className="text-2xl font-semibold font-serif  mb-8 italic">
               Excellence Meets Elegance
             </motion.p>
-            <motion.div variants={fadeUp} custom={3} className="flex flex-wrap gap-4">
-              <Link
-                to="/products"
-                className="rounded-full px-8 py-3.5 font-semibold text-primary-foreground hover:scale-105 transition-transform inline-flex items-center gap-2 bg-[#E76439]"
-              >
-                View Products <ArrowRight size={18} />
-              </Link>
-              <Link
-                to="/contact"
-                className="rounded-full px-8 py-3.5 font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
-                Contact Us
-              </Link>
+            <motion.div variants={heroItem} className="flex flex-wrap gap-4">
+              <motion.div whileHover={btnHover} whileTap={btnTap}>
+                <Link
+                  to="/products"
+                  className="rounded-full px-8 py-3.5 font-semibold text-primary-foreground inline-flex items-center gap-2 bg-[#E76439]"
+                >
+                  View Products <ArrowRight size={18} />
+                </Link>
+              </motion.div>
+              <motion.div whileHover={btnHover} whileTap={btnTap}>
+                <Link
+                  to="/contact"
+                  className="rounded-full px-8 py-3.5 font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors inline-block"
+                >
+                  Contact Us
+                </Link>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>
@@ -162,15 +195,19 @@ const Index = () => {
               key={cat.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={cardHover}
+              whileTap={cardTap}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
             >
               <Link to={cat.link ?? "/products"} className="group block">
                 <div className="relative overflow-hidden rounded-xl aspect-[3/4] mb-4">
-                  <img
+                  <motion.img
                     src={cat.image}
                     alt={cat.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-cover"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ duration: 0.4 }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
@@ -194,9 +231,11 @@ const Index = () => {
               key={f.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ ...cardHover, transition: { duration: 0.25 } }}
+              whileTap={cardTap}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="text-center hover-lift p-6 rounded-xl bg-card border border-border"
+              className="text-center p-6 rounded-xl bg-card border border-border"
             >
               <div className="w-14 h-14 gradient-gold rounded-full flex items-center justify-center mx-auto mb-4">
                 <f.icon size={24} className="text-primary-foreground" />
@@ -255,12 +294,14 @@ const Index = () => {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
         >
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 bg-card text-foreground rounded-full px-8 py-3.5 font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300"
-          >
-            Get in Touch <ArrowRight size={18} />
-          </Link>
+          <motion.div whileHover={btnHover} whileTap={btnTap} className="inline-block">
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 bg-card text-foreground rounded-full px-8 py-3.5 font-semibold hover:shadow-xl transition-shadow duration-300"
+            >
+              Get in Touch <ArrowRight size={18} />
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </section>

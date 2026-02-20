@@ -35,8 +35,6 @@ const MALTA_IMAGES = {
     { src: "/glasses/malta/v0273-malta.png", label: "V0273 Malta" },
     { src: "/glasses/malta/v0277-malta.png", label: "V0277 Malta" },
     { src: "/glasses/malta/v0278-malta.png", label: "V0278 Malta" },
-    { src: "/glasses/malta/malta-familia.png", label: "Malta Familia" },
-    { src: "/glasses/malta/ambiente-malta-2.png", label: "Ambiente Malta" },
   ],
 };
 
@@ -101,7 +99,6 @@ const MANHATTAN_IMAGES = {
     { src: "/glasses/manhattan/manhattan.png", label: "Manhattan" },
     { src: "/glasses/manhattan/manhattan-familia.png", label: "Manhattan Familia" },
     { src: "/glasses/manhattan/manhattan-gin.png", label: "Manhattan Gin" },
-    { src: "/glasses/manhattan/manhattan-cocktail.png", label: "Manhattan Cocktail" },
   ],
 };
 
@@ -137,7 +134,6 @@ const MARGARITA_IMAGES = {
     { src: "/glasses/margarita/margarita.png", label: "Copa Margarita" },
     { src: "/glasses/margarita/margarita-familia.png", label: "Margarita Familia" },
     { src: "/glasses/margarita/margarita-cocktail.png", label: "Margarita Cocktail" },
-    { src: "/glasses/margarita/margarita-berry.png", label: "Margarita Berry" },
   ],
 };
 
@@ -173,11 +169,6 @@ const MENCIA_IMAGES = {
     { src: "/glasses/mencia/mencia-44.png", label: "Mencia 44cl" },
     { src: "/glasses/mencia/mencia-25.png", label: "Mencia 25cl" },
     { src: "/glasses/mencia/mencia-31.png", label: "Mencia 31cl" },
-    { src: "/glasses/mencia/mencia-cerveza.png", label: "Mencia Cerveza" },
-    { src: "/glasses/mencia/mencia-ambiente.png", label: "Mencia Ambiente" },
-    { src: "/glasses/mencia/mencia-copas.png", label: "Mencia Copas" },
-    { src: "/glasses/mencia/mencia-wine.png", label: "Mencia Wine" },
-    { src: "/glasses/mencia/mencia-b.png", label: "Mencia B" },
   ],
 };
 
@@ -249,12 +240,6 @@ const MERLOT_IMAGES = {
     { src: "/glasses/merlot/merlot-42.png", label: "Merlot 42cl" },
     { src: "/glasses/merlot/merlot-31.png", label: "Merlot 31cl" },
     { src: "/glasses/merlot/merlot-23.png", label: "Merlot 23cl" },
-    { src: "/glasses/merlot/merlot-19.png", label: "Merlot 19cl" },
-    { src: "/glasses/merlot/merlot-vaso.png", label: "Merlot Vaso" },
-    { src: "/glasses/merlot/merlot-bajo.png", label: "Merlot Bajo" },
-    { src: "/glasses/merlot/merlot-familia.png", label: "Merlot Familia" },
-    { src: "/glasses/merlot/merlot-copas.png", label: "Merlot Copas" },
-    { src: "/glasses/merlot/merlot-wine.png", label: "Merlot Wine" },
   ],
 };
 
@@ -315,7 +300,6 @@ const MILLOT_IMAGES = {
     { src: "/glasses/millot/millot-47.png", label: "Millot 47cl" },
     { src: "/glasses/millot/millot-40.png", label: "Millot 40cl" },
     { src: "/glasses/millot/millot-ambiente.png", label: "Millot Ambiente" },
-    { src: "/glasses/millot/millot-familia.png", label: "Millot Familia" },
   ],
 };
 
@@ -341,13 +325,6 @@ const MIRAGE_IMAGES = {
     { src: "/glasses/mirage/mirage-30.png", label: "Mirage 30cl" },
     { src: "/glasses/mirage/mirage-27.png", label: "Mirage 27cl" },
     { src: "/glasses/mirage/mirage-20.png", label: "Mirage 20cl" },
-    { src: "/glasses/mirage/mirage-16.png", label: "Mirage 16cl" },
-    { src: "/glasses/mirage/mirage-agua.png", label: "Mirage Agua" },
-    { src: "/glasses/mirage/mirage-zumo.png", label: "Mirage Zumo" },
-    { src: "/glasses/mirage/mirage-postre.png", label: "Mirage Postre" },
-    { src: "/glasses/mirage/mirage-bodegon.png", label: "Mirage Bodegon" },
-    { src: "/glasses/mirage/mirage-2.png", label: "Mirage" },
-    { src: "/glasses/mirage/mirage-tumbler.png", label: "Mirage Tumbler" },
   ],
 };
 
@@ -378,8 +355,6 @@ const MOKKA_IMAGES = {
     { src: "/glasses/mokka/mokka-11.png", label: "Mokka 11cl" },
     { src: "/glasses/mokka/mokka-12-9.png", label: "Mokka 12.9cl" },
     { src: "/glasses/mokka/mokka-postre.png", label: "Mokka Postre" },
-    { src: "/glasses/mokka/mokka-infusion.png", label: "Mokka Infusion" },
-    { src: "/glasses/mokka/mokka-bodegon.png", label: "Mokka Bodegon" },
   ],
 };
 
@@ -430,7 +405,6 @@ const NERVION_IMAGES = {
     { src: "/glasses/nervion/nervion-29.png", label: "Nervion 29cl" },
     { src: "/glasses/nervion/nervion-20.png", label: "Nervion 20cl" },
     { src: "/glasses/nervion/nervion-bodegon.png", label: "Nervion Bodegon" },
-    { src: "/glasses/nervion/nervion-ambiente.png", label: "Nervion Ambiente" },
   ],
 };
 
@@ -480,11 +454,6 @@ const PIAMONTE_IMAGES = {
     { src: "/glasses/piamonte/piamonte-50.png", label: "Piamonte 50cl" },
     { src: "/glasses/piamonte/piamonte-marianito.png", label: "Piamonte Marianito" },
     { src: "/glasses/piamonte/piamonte-bodegon.png", label: "Piamonte Bodegon" },
-    { src: "/glasses/piamonte/piamonte-cerveza.png", label: "Piamonte Cerveza" },
-    { src: "/glasses/piamonte/piamonte-familia.png", label: "Piamonte Familia" },
-    { src: "/glasses/piamonte/piamonte-vermut.png", label: "Piamonte Vermut" },
-    { src: "/glasses/piamonte/piamonte-4.png", label: "Piamonte" },
-    { src: "/glasses/piamonte/piamonte-tumbler.png", label: "Piamonte Tumbler" },
   ],
 };
 
@@ -514,15 +483,6 @@ const PINOT_IMAGES = {
     { src: "/glasses/pinot/pinot-25.png", label: "Pinot 25cl" },
     { src: "/glasses/pinot/pinot-copas.png", label: "Copas Pinot" },
     { src: "/glasses/pinot/pinot-ambiente.png", label: "Pinot Ambiente" },
-    { src: "/glasses/pinot/pinot-wine.png", label: "Pinot Wine" },
-    { src: "/glasses/pinot/pinot-1.png", label: "Pinot" },
-    { src: "/glasses/pinot/pinot-2.png", label: "Pinot 2" },
-    { src: "/glasses/pinot/pinot-3.png", label: "Pinot 3" },
-    { src: "/glasses/pinot/pinot-5.png", label: "Pinot 5" },
-    { src: "/glasses/pinot/pinot-6.png", label: "Pinot 6" },
-    { src: "/glasses/pinot/pinot-7.png", label: "Pinot 7" },
-    { src: "/glasses/pinot/pinot-9.png", label: "Pinot 9" },
-    { src: "/glasses/pinot/pinot-11.png", label: "Pinot 11" },
   ],
 };
 
@@ -554,7 +514,6 @@ const RIOJA_IMAGES = {
     { src: "/glasses/rioja/rioja-56.png", label: "Rioja 56cl" },
     { src: "/glasses/rioja/rioja-56-bodegon.png", label: "Rioja 56cl Bodegón" },
     { src: "/glasses/rioja/rioja-42.png", label: "Rioja 42cl" },
-    { src: "/glasses/rioja/rioja-42-bodegon.png", label: "Rioja 42cl Bodegón" },
   ],
 };
 
@@ -580,8 +539,6 @@ const ROCKY_STACK_IMAGES = {
     { src: "/glasses/rocky-stack/rocky-stack-30.png", label: "Rocky Stack 30cl" },
     { src: "/glasses/rocky-stack/rocky-stack-28.png", label: "Rocky Stack 28cl" },
     { src: "/glasses/rocky-stack/rocky-stack-single.png", label: "Rocky Stack" },
-    { src: "/glasses/rocky-stack/rocky-stack-ambiente-3.png", label: "Rocky Stack Ambiente" },
-    { src: "/glasses/rocky-stack/rocky-stack-ambiente-4.png", label: "Rocky Stack Ambiente 4" },
   ],
 };
 
@@ -635,8 +592,6 @@ const RONCAL_IMAGES = {
     { src: "/glasses/roncal/roncal-single.png", label: "Roncal" },
     { src: "/glasses/roncal/roncal-familia.png", label: "Roncal Familia" },
     { src: "/glasses/roncal/roncal-familia-2.png", label: "Roncal Familia 2" },
-    { src: "/glasses/roncal/roncal-bajo.png", label: "Roncal Bajo" },
-    { src: "/glasses/roncal/roncal-35fa.png", label: "Roncal 35FA" },
   ],
 };
 
@@ -709,19 +664,6 @@ const SETS_BODEGON_IMAGES = {
     { src: "/glasses/SETS%20-%20Bodegon/Bodegon_048.jpg", label: "Bodegón 048" },
     { src: "/glasses/SETS%20-%20Bodegon/Bodegon_054.jpg", label: "Bodegón 054" },
     { src: "/glasses/SETS%20-%20Bodegon/Bodegon_074.jpg", label: "Bodegón 074" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_077.jpg", label: "Bodegón 077" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_117.jpg", label: "Bodegón 117" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_145.jpg", label: "Bodegón 145" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_148.jpg", label: "Bodegón 148" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_242.jpg", label: "Bodegón 242" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_276.jpg", label: "Bodegón 276" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_303.jpg", label: "Bodegón 303" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_331.jpg", label: "Bodegón 331" },
-    { src: "/glasses/SETS%20-%20Bodegon/Bodegon_336.jpg", label: "Bodegón 336" },
-    { src: "/glasses/SETS%20-%20Bodegon/uso%20whisky.jpg", label: "Uso Whisky" },
-    { src: "/glasses/SETS%20-%20Bodegon/uso%20zumo.jpg", label: "Uso Zumo" },
-    { src: "/glasses/SETS%20-%20Bodegon/uso%20licores%203.jpg", label: "Uso Licores" },
-    { src: "/glasses/SETS%20-%20Bodegon/uso%20helado3.jpg", label: "Uso Helado" },
   ],
 };
 
@@ -772,13 +714,6 @@ const SYRAH_IMAGES = {
     { src: "/glasses/Syrah/syrah%2058.jpg", label: "Syrah 58cl" },
     { src: "/glasses/Syrah/syrah%2047.jpg", label: "Syrah 47cl" },
     { src: "/glasses/Syrah/syrah%2035.jpg", label: "Syrah 35cl" },
-    { src: "/glasses/Syrah/syrah%2025.jpg", label: "Syrah 25cl" },
-    { src: "/glasses/Syrah/syrah%2017.jpg", label: "Syrah 17cl" },
-    { src: "/glasses/Syrah/V0244-V0245-Syrah.jpg", label: "V0244 V0245 Syrah" },
-    { src: "/glasses/Syrah/Ambiente-Syrah.jpg", label: "Ambiente Syrah" },
-    { src: "/glasses/Syrah/pinot%20vaso%2035.jpg", label: "Pinot Vaso 35" },
-    { src: "/glasses/Syrah/pinot%20vaso%2047.jpg", label: "Pinot Vaso 47" },
-    { src: "/glasses/Syrah/syrah%20familia.jpg", label: "Syrah Familia" },
   ],
 };
 
@@ -804,11 +739,6 @@ const SAUVIGNON_IMAGES = {
     { src: "/glasses/sauvignon/sauvignon-58.png", label: "Sauvignon 58cl" },
     { src: "/glasses/sauvignon/sauvignon-44.png", label: "Sauvignon 44cl" },
     { src: "/glasses/sauvignon/sauvignon-35.png", label: "Sauvignon 35cl" },
-    { src: "/glasses/sauvignon/sauvignon-wine.png", label: "Sauvignon" },
-    { src: "/glasses/sauvignon/sauvignon-familia.png", label: "Sauvignon Familia" },
-    { src: "/glasses/sauvignon/sauvignon-ambiente.png", label: "Sauvignon Ambiente" },
-    { src: "/glasses/sauvignon/sauvignon-agua.png", label: "Sauvignon Agua" },
-    { src: "/glasses/sauvignon/sauvignon-champagne.png", label: "Sauvignon Champagne" },
   ],
 };
 
@@ -838,8 +768,6 @@ const COPA_STACK_IMAGES = {
     { src: "/glasses/stack-copa/copa-stack-25.png", label: "Copa Stack 25cl" },
     { src: "/glasses/stack-copa/copa-stack-19.png", label: "Copa Stack 19cl" },
     { src: "/glasses/stack-copa/copa-stack-single.png", label: "Copa Stack" },
-    { src: "/glasses/stack-copa/copa-stack-familia.png", label: "Copa Stack Familia" },
-    { src: "/glasses/stack-copa/copa-stack-ambiente.png", label: "Copa Stack Ambiente" },
   ],
 };
 
@@ -868,8 +796,6 @@ const VASO_STACK_IMAGES = {
     { src: "/glasses/stack-vaso/vaso-stack-25.png", label: "Vaso Stack 25cl" },
     { src: "/glasses/stack-vaso/vaso-stack-18.png", label: "Vaso Stack 18cl" },
     { src: "/glasses/stack-vaso/vaso-stack-12.png", label: "Vaso Stack 12cl" },
-    { src: "/glasses/stack-vaso/vaso-stack-single.png", label: "Vaso Stack" },
-    { src: "/glasses/stack-vaso/vaso-stack-ambiente.png", label: "Vaso Stack Ambiente" },
   ],
 };
 
@@ -899,8 +825,6 @@ const T_NONIC_IMAGES = {
     { src: "/glasses/t-nonic/t-nonic-56.png", label: "T-Nonic 56cl" },
     { src: "/glasses/t-nonic/t-nonic-47.png", label: "T-Nonic 47cl" },
     { src: "/glasses/t-nonic/t-nonic-28.png", label: "T-Nonic 28cl" },
-    { src: "/glasses/t-nonic/t-nonic-bodegon.png", label: "T-Nonic Bodegón" },
-    { src: "/glasses/t-nonic/t-nonic-refresco.png", label: "T-Nonic Refresco" },
   ],
 };
 
@@ -950,7 +874,6 @@ const TXIKITERO_IMAGES = {
     { src: "/glasses/txikitero/txikitero-individual.png", label: "Txikitero" },
     { src: "/glasses/txikitero/txikitero-vaso.png", label: "Txikitero Vaso" },
     { src: "/glasses/txikitero/txikitero-bodegon.png", label: "Txikitero Bodegón" },
-    { src: "/glasses/txikitero/txikitero-catalog.png", label: "Txikitero 12cl" },
   ],
 };
 
@@ -978,10 +901,6 @@ const VALENCIA_IMAGES = {
     { src: "/glasses/valencia/valencia-23.png", label: "Valencia 23cl" },
     { src: "/glasses/valencia/valencia-20.png", label: "Valencia 20cl" },
     { src: "/glasses/valencia/valencia-19.png", label: "Valencia 19cl" },
-    { src: "/glasses/valencia/valencia-15.png", label: "Valencia 15cl" },
-    { src: "/glasses/valencia/valencia-familia.png", label: "Valencia Familia" },
-    { src: "/glasses/valencia/valencia-ambiente.png", label: "Valencia Ambiente" },
-    { src: "/glasses/valencia/valencia-catalog.png", label: "Valencia Catálogo" },
   ],
 };
 
@@ -1012,9 +931,6 @@ const VALON_IMAGES = {
     { src: "/glasses/valon/valon-25.png", label: "Valon 25cl" },
     { src: "/glasses/valon/valon-19.png", label: "Valon 19cl" },
     { src: "/glasses/valon/valon-15.png", label: "Valon 15cl" },
-    { src: "/glasses/valon/valon-catalog.png", label: "Valon Catálogo" },
-    { src: "/glasses/valon/valon-ambiente.png", label: "Valon Ambiente" },
-    { src: "/glasses/valon/valon-ambiente-2.png", label: "Valon Ambiente 2" },
   ],
 };
 
@@ -1044,7 +960,6 @@ const VERMUT_IMAGES = {
     { src: "/glasses/vermut/vermut-24.png", label: "Vermut 24cl" },
     { src: "/glasses/vermut/vermut-catalog.png", label: "Vermut Catálogo" },
     { src: "/glasses/vermut/vermut-bodegon.png", label: "Vermut Bodegón" },
-    { src: "/glasses/vermut/vermut-familia.png", label: "Vermut Familia" },
   ],
 };
 
@@ -1072,11 +987,6 @@ const VINTAGE_IMAGES = {
     { src: "/glasses/vintage/vintage-56.png", label: "Vintage 56cl" },
     { src: "/glasses/vintage/vintage-25.png", label: "Vintage 25cl" },
     { src: "/glasses/vintage/vintage-20.png", label: "Vintage 20cl" },
-    { src: "/glasses/vintage/vintage-19.png", label: "Vintage 19cl Flute" },
-    { src: "/glasses/vintage/vintage-56-uso.png", label: "Vintage 56cl Uso" },
-    { src: "/glasses/vintage/vintage-familia.png", label: "Vintage Familia" },
-    { src: "/glasses/vintage/vintage-ambiente.png", label: "Vintage Ambiente" },
-    { src: "/glasses/vintage/vintage-catalog.png", label: "Vintage Catálogo" },
   ],
 };
 
@@ -1109,10 +1019,6 @@ const VIURA_IMAGES = {
     { src: "/glasses/viura/viura-42.png", label: "Viura 42cl" },
     { src: "/glasses/viura/viura-30.png", label: "Viura 30cl" },
     { src: "/glasses/viura/viura-23.png", label: "Viura 23cl" },
-    { src: "/glasses/viura/viura-catalog.png", label: "Viura Catálogo" },
-    { src: "/glasses/viura/viura-ambiente.png", label: "Viura Ambiente" },
-    { src: "/glasses/viura/viura-ambiente-2.png", label: "Viura Ambiente 2" },
-    { src: "/glasses/viura/viura-ambiente-3.png", label: "Viura Ambiente 3" },
   ],
 };
 
@@ -1144,7 +1050,6 @@ const XAREL_IMAGES = {
     { src: "/glasses/xarel/xarel-17.png", label: "Xarel 17cl" },
     { src: "/glasses/xarel/xarel-catalog.png", label: "Xarel Catálogo" },
     { src: "/glasses/xarel/xarel-ambiente-2.png", label: "Xarel Ambiente 2" },
-    { src: "/glasses/xarel/xarel-ambiente-cat.png", label: "Xarel Ambiente Cat" },
   ],
 };
 
@@ -1172,8 +1077,6 @@ const TOSCANA_IMAGES = {
     { src: "/glasses/toscana/toscana-62.png", label: "Toscana 62cl" },
     { src: "/glasses/toscana/toscana-41.png", label: "Toscana 41cl" },
     { src: "/glasses/toscana/toscana-single.png", label: "Toscana" },
-    { src: "/glasses/toscana/toscana-ambiente.png", label: "Toscana Ambiente" },
-    { src: "/glasses/toscana/toscana-ambiente-2.png", label: "Toscana Ambiente 2" },
   ],
 };
 
@@ -1896,11 +1799,11 @@ const Products = () => {
                   <h4 className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">
                     Variants
                   </h4>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                  <div className="flex justify-between gap-4">
                     {glassModal.gallery.map((item) => (
                       <div
                         key={item.src}
-                        className="group rounded-xl overflow-hidden border border-border bg-secondary/30 hover:border-primary/40 transition-colors"
+                        className="flex-1 min-w-0 max-w-[180px] group rounded-xl overflow-hidden border border-border bg-secondary/30 hover:border-primary/40 transition-colors"
                       >
                         <div className="aspect-[3/4] overflow-hidden bg-muted/30">
                           <img
