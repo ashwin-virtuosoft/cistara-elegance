@@ -58,10 +58,21 @@ const Index = () => {
     <Layout>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={heroImg} alt="Premium glassware" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
-        </div>
+        <motion.div
+          className="absolute inset-0"
+          initial={{ opacity: 0, scale: 1.08 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        >
+          <motion.img
+            src={heroImg}
+            alt="Premium glassware"
+            className="w-full h-full object-cover object-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          />
+        </motion.div>
 
         <div className="container mx-auto px-4 relative z-10 pt-20">
           <motion.div
