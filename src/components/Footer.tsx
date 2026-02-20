@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone, Linkedin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, MessageCircle, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/cistara-logo.png";
+import salesManagerImage from "@/assets/sales-manager.png";
 
 const Footer = () => {
   const handleQuickLinkClick = () => {
@@ -42,7 +43,7 @@ const Footer = () => {
                   <Mail size={18} className="shrink-0 mt-1 sm:mt-0" /> <span className="break-all">sales@cistara.com</span>
                 </a>
                 <a href="tel:+971524955377" className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base opacity-70 hover:text-primary hover:opacity-100 transition-all duration-300">
-                  <Phone size={18} className="shrink-0" /> <span>+971 52 495</span>
+                  <Phone  className="shrink-0" /> <span>+971 50 7693577 | +971 52 4955377 </span>
                 </a>
                 <div className="flex items-start gap-2 sm:gap-3 text-sm sm:text-base opacity-70">
                   <MapPin size={18} className="mt-0.5 shrink-0" />
@@ -69,13 +70,31 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Sales Manager Section */}
+      <div className="bg-charcoal/50 rounded-xl p-6 sm:p-8 mb-12 border border-charcoal-foreground/10">
+        <h4 className="font-display text-lg sm:text-xl mb-4 font-bold">Sales Manager</h4>
+        <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden shrink-0 ring-2 ring-primary/30">
+            <img src={salesManagerImage} alt="Saranya Sai Sasikumar - Sales Manager" className="w-full h-full object-cover" />
+          </div>
+          <div>
+            <p className="text-base sm:text-lg font-semibold text-primary">Saranya Sai Sasikumar</p>
+            <p className="text-sm sm:text-base opacity-80 mb-1">Sales Manager</p>
+            <div className="flex items-start gap-2 text-sm sm:text-base opacity-70">
+              <MapPin size={16} className="mt-0.5 shrink-0" />
+              <span>SPC Free Zone Business Center, Sharjah Publishing City Free Zone, Sharjah, UAE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Social Media Banner Section */}
       <div className="bg-charcoal/50 rounded-xl p-8 sm:p-10 text-center mb-12 border border-charcoal-foreground/10">
         <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8">Stay connected with us:</h3>
         <div className="flex justify-center items-center gap-4 sm:gap-6 flex-wrap">
           {/* Facebook */}
           <a 
-            href="https://facebook.com" 
+            href="https://www.facebook.com/share/1bPQrYfwBK/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-blue-600 flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-2xl text-white"
@@ -84,23 +103,23 @@ const Footer = () => {
             <Facebook size={20} />
           </a>
 
-          {/* LinkedIn */}
+          {/* WhatsApp */}
           <a 
-            href="https://linkedin.com" 
+            href="https://wa.me/message/GEL3ODMIMVRDA1" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-blue-500 flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-2xl text-white"
-            title="LinkedIn"
+            className="w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-[#25D366] flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-2xl text-white"
+            title="WhatsApp"
           >
-            <Linkedin size={20} />
+            <MessageCircle size={20} />
           </a>
 
           {/* Instagram */}
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/cistaraemea?utm_source=qr&igsh=MXR4bWFneWo0ZzRvaQ==" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-2xl text-white"
+            className="w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-[#E76439] flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg hover:shadow-2xl text-white"
             title="Instagram"
           >
             <Instagram size={20} />

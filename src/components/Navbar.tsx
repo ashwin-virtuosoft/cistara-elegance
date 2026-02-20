@@ -50,7 +50,7 @@ const Navbar = () => {
           ))}
           <Link
             to="/contact"
-            className="gradient-gold rounded-full px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-transform duration-200 hover:scale-105"
+            className="bg-[#E76439] rounded-full px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-transform duration-200 hover:scale-105"
           >
             Get in Touch
           </Link>

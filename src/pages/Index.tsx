@@ -79,10 +79,10 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -40 }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
-                  className="text-5xl md:text-7xl font-display font-bold leading-tight"
+                  className="text-5xl md:text-7xl font-display font-bold leading-tight "
                 >
                   {heroHeadlines[headlineIndex].top}{" "}
-                  <span className="gradient-gold-text">{heroHeadlines[headlineIndex].highlight}</span>
+                  <span className="text-[#E76439]">{heroHeadlines[headlineIndex].highlight}</span>
                 </motion.h1>
               </AnimatePresence>
             </div>
@@ -92,7 +92,7 @@ const Index = () => {
             <motion.div variants={fadeUp} custom={3} className="flex flex-wrap gap-4">
               <Link
                 to="/products"
-                className="rounded-full px-8 py-3.5 font-semibold text-primary-foreground hover:scale-105 transition-transform inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500"
+                className="rounded-full px-8 py-3.5 font-semibold text-primary-foreground hover:scale-105 transition-transform inline-flex items-center gap-2 bg-[#E76439]"
               >
                 View Products <ArrowRight size={18} />
               </Link>
@@ -198,7 +198,7 @@ const Index = () => {
     </section>
 
     {/* CTA */}
-    <section className="section-padding gradient-gold text-center">
+    <section className="section-padding bg-[#E76439] text-center">
       <div className="container mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -219,7 +219,7 @@ const Index = () => {
         </motion.p>
         <Link
           to="/contact"
-          className="inline-flex items-center gap-2 bg-card text-foreground rounded-full px-8 py-3.5 font-semibold hover:scale-105 transition-transform"
+          className="inline-flex items-center gap-2 bg-[#E76439] text-foreground rounded-full px-8 py-3.5 font-semibold hover:scale-105 transition-transform"
         >
           Get in Touch <ArrowRight size={18} />
         </Link>

@@ -1735,7 +1735,7 @@ const Products = () => {
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.35, duration: 0.5 }}
-              className="h-px w-24 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent rounded-full"
+              className="h-px w-24 mx-auto bg-[#E76439] rounded-full"
             />
           </motion.div>
 
@@ -1772,7 +1772,7 @@ const Products = () => {
               >
                 {/* Hover shine overlay */}
                 <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10 overflow-hidden">
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/15 to-transparent skew-x-12" />
+                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-white/15 skew-x-12" />
                 </div>
                 {glass.modalContent && (
                   <div className="absolute top-2 right-2 z-10 bg-primary/90 text-primary-foreground text-xs font-medium px-2 py-1 rounded-md">
