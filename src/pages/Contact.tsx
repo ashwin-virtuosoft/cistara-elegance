@@ -98,49 +98,49 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-8 space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="text-sm font-medium mb-2 block">Name</label>
+                    <label className="text-md font-medium mb-2 block">Name</label>
                     <input
                       required
                       maxLength={100}
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
+                      className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-md focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
                       placeholder="Your name"
                     />
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-2 block">Email</label>
+                    <label className="text-md font-medium mb-2 block">Email</label>
                     <input
                       required
                       type="email"
                       maxLength={255}
                       value={form.email}
                       onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
+                      className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-md focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
                       placeholder="your@email.com"
                     />
                   </div>
                 </div>
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Subject</label>
+                  <label className="text-md font-medium mb-2 block">Subject</label>
                   <input
                     required
                     maxLength={200}
                     value={form.subject}
                     onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                    className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
+                    className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-md focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow"
                     placeholder="How can we help?"
                   />
                 </div>
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Message</label>
+                  <label className="text-md font-medium mb-2 block">Message</label>
                   <textarea
                     required
                     maxLength={2000}
                     rows={5}
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow resize-none"
+                    className="w-full bg-secondary/50 border border-border rounded-lg px-4 py-3 text-md focus:outline-none focus:ring-2 focus:ring-primary/50 transition-shadow resize-none"
                     placeholder="Tell us about your requirements..."
                   />
                 </div>
