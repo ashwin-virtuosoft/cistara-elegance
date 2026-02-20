@@ -1708,7 +1708,7 @@ const Products = () => {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1, duration: 0.4 }}
-              className="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-3"
+              className="inline-block text-xl font-semibold uppercase tracking-[0.2em] text-primary mb-3"
             >
               Glassware Collection
             </motion.span>
@@ -1726,7 +1726,7 @@ const Products = () => {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.25, duration: 0.4 }}
-              className="text-center text-md font-medium text-muted-foreground max-w-2xl mx-auto mb-6"
+              className="text-center text-lg font-medium text-muted-foreground max-w-2xl mx-auto mb-6"
             >
               Explore our range of glassware — each shown empty and filled for your reference.
             </motion.p>
@@ -1735,7 +1735,7 @@ const Products = () => {
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.35, duration: 0.5 }}
-              className="h-px w-24 mx-auto bg-[#E76439] rounded-full"
+             className="h-px w-24 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent rounded-full"
             />
           </motion.div>
 
@@ -1768,19 +1768,17 @@ const Products = () => {
                 onKeyDown={(e) =>
                   glass.modalContent && (e.key === "Enter" || e.key === " ") && setGlassModal(glass.modalContent)
                 }
-                className={`group relative bg-card border border-border rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/30 ${glass.modalContent ? "cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" : ""}`}
+                className={`group relative bg-white border border-border rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/30 ${glass.modalContent ? "cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" : ""}`}
               >
                 {/* Hover shine overlay */}
-                <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10 overflow-hidden">
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-white/15 skew-x-12" />
-                </div>
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/15 to-transparent skew-x-12" />
                 {glass.modalContent && (
                   <div className="absolute top-2 right-2 z-10 bg-primary/90 text-primary-foreground text-xs font-medium px-2 py-1 rounded-md">
                     View details
                   </div>
                 )}
 
-                <div className="relative aspect-square overflow-hidden bg-secondary/30 flex items-center justify-center p-6">
+                <div className="relative aspect-square overflow-hidden flex items-center justify-center p-6">
                   <motion.img
                     src={glass.emptyImage}
                     alt={glass.name}
