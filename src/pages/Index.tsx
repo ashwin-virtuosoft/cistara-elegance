@@ -4,8 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Award, Headphones, Shield, Leaf } from "lucide-react";
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-glassware.jpg";
-import wineImg from "@/assets/bordeaux-glass.jpg";
+import heroBarGlasses from "@/assets/hero-bar-glasses.png";
 import spiritsImg from "@/assets/whiskey-tumbler.jpg";
+import wineImg from "@/assets/bordeaux-glass.jpg";
 import beerImg from "@/assets/pilsner-glass.jpg";
 import cafeImg from "@/assets/cappuccino-cup.jpg";
 import buffetImg from "@/assets/buffet-riser.jpg";
@@ -198,31 +199,58 @@ const Index = () => {
     </section>
 
     {/* CTA */}
-    <section className="section-padding bg-[#E76439] text-center">
-      <div className="container mx-auto">
+    <section className="section-padding relative overflow-hidden text-center">
+      <div className="absolute inset-0">
+        <motion.img
+          src={heroBarGlasses}
+          alt=""
+          className="w-full h-full object-cover object-center"
+          aria-hidden
+          initial={{ scale: 1 }}
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 8, ease: "easeInOut", repeat: Infinity, repeatDelay: 0.5 }}
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-br from-black/70 via-[#E76439]/75 to-black/60"
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/30"
+          aria-hidden
+        />
+      </div>
+      <div className="container mx-auto relative z-10">
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-4"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-4 drop-shadow-lg"
         >
           Ready to Elevate Your Hospitality Experience?
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-primary-foreground/80 mb-8 text-lg"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+          className="text-primary-foreground/90 mb-8 text-lg drop-shadow-md"
         >
           Partner with Cistara for premium quality and exceptional service.
         </motion.p>
-        <Link
-          to="/contact"
-          className="inline-flex items-center gap-2 bg-[#E76439] text-foreground rounded-full px-8 py-3.5 font-semibold hover:scale-105 transition-transform"
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
         >
-          Get in Touch <ArrowRight size={18} />
-        </Link>
+          <Link
+            to="/contact"
+            className="inline-flex items-center gap-2 bg-card text-foreground rounded-full px-8 py-3.5 font-semibold hover:scale-105 hover:shadow-xl transition-all duration-300"
+          >
+            Get in Touch <ArrowRight size={18} />
+          </Link>
+        </motion.div>
       </div>
     </section>
     </Layout>
