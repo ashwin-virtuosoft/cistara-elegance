@@ -3,13 +3,17 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Award, Headphones, Shield, Leaf } from "lucide-react";
 import Layout from "@/components/Layout";
+import champagneImg from "@/assets/champagne-glass.jpg";
 import heroImg from "@/assets/hero-glassware.jpg";
 import heroBarGlasses from "@/assets/hero-bar-glasses.png";
 import spiritsImg from "@/assets/whiskey-tumbler.jpg";
-import champagneImg from "@/assets/champagne-glass.jpg";
 import beerImg from "@/assets/pilsner-glass.jpg";
 import cafeImg from "@/assets/cappuccino-cup.jpg";
-import buffetImg from "@/assets/buffet-riser.jpg";
+import buffetImg from "@/assets/buffet-setup.png";
+import cakeStandImg from "@/assets/cake-stand.png";
+import cakeDomeImg from "@/assets/cake 1.png";
+import wineStemwareImg from "@/assets/wine-stemware.png";
+import orangeCocktailImg from "@/assets/orange-cocktail-concept-fresh-delicious-summer-citrus-cocktail.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -48,6 +52,7 @@ const categories = [
   { title: "Spirits & Liquor", image: spiritsImg, desc: "Crystal-clear barware collection", link: "/products" },
   { title: "Beer Glassware", image: beerImg, desc: "Premium craft beer glasses", link: "/products" },
   { title: "Café Essentials", image: cafeImg, desc: "Refined coffee & tea service", link: "/products" },
+  { title: "Cake Dome Stands", image: cakeStandImg, desc: "Elegant cake domes and displays", link: "/products" },
   { title: "Buffet & Kitchen", image: buffetImg, desc: "Professional buffet & kitchen equipment", link: "/products" },
 ];
 
@@ -66,6 +71,14 @@ const heroHeadlines = [
   { top: "Fine Dining", highlight: "Essentials" },
 ];
 
+const heroBackgrounds = [
+  heroImg,           // Premier Hospitality Supply Partner
+  orangeCocktailImg, // Premium Malta Glassware
+  cakeDomeImg,       // Elegant Cake Dome Stands
+  buffetImg,         // Luxury Buffet Equipment
+  wineStemwareImg,   // Fine Dining Essentials
+];
+
 const Index = () => {
   const [headlineIndex, setHeadlineIndex] = useState(0);
 
@@ -80,34 +93,52 @@ const Index = () => {
     <Layout>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        <motion.div
-          className="absolute inset-0"
-          initial={{ opacity: 0, scale: 1.08 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-        >
-          <motion.img
-            src={heroImg}
-            alt="Premium glassware"
-            className="w-full h-full object-cover object-center"
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: 1,
-              scale: [1, 1.03, 1],
-            }}
-            transition={{
-              opacity: { duration: 1, delay: 0.2 },
-              scale: { duration: 12, ease: "easeInOut", repeat: Infinity, repeatDelay: 2 },
-            }}
-          />
-        </motion.div>
+        <div
+          className="absolute inset-0 bg-gradient-to-br from-[#E76439]/25 via-[#E76439]/15 to-[#E76439]/20"
+          aria-hidden
+        />
+        <div className="absolute inset-0">
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={headlineIndex}
+              className="absolute inset-0"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              <motion.img
+                src={heroBackgrounds[headlineIndex]}
+                alt=""
+                className="w-full h-full object-cover object-center"
+                aria-hidden
+                initial={{ scale: 1 }}
+                animate={{ scale: [1, 1.03, 1] }}
+                transition={{ duration: 12, ease: "easeInOut", repeat: Infinity, repeatDelay: 2 }}
+              />
+              {/* Gradient overlay for text readability & visual appeal */}
+              <div
+                className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent"
+                aria-hidden
+              />
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/40"
+                aria-hidden
+              />
+              <div
+                className="absolute inset-0 bg-gradient-to-br from-[#E76439]/10 via-transparent to-transparent"
+                aria-hidden
+              />
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
         <div className="container mx-auto px-4 relative z-10 pt-20">
           <motion.div
             variants={heroContainer}
             initial="hidden"
             animate="visible"
-            className="max-w-2xl"
+            className="max-w-2xl text-primary-foreground"
           >
             <motion.div variants={heroItem} className="h-[120px] md:h-[160px] mb-4 overflow-hidden">
               <AnimatePresence mode="wait">
@@ -116,11 +147,11 @@ const Index = () => {
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -40 }}
-                  transition={{ duration: 0.5, ease: "easeOut" }}
-                  className="text-5xl md:text-7xl font-display font-bold leading-tight "
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="text-5xl md:text-7xl font-display font-bold leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
                 >
                   {heroHeadlines[headlineIndex].top}{" "}
-                  <span className="text-[#E76439]">{heroHeadlines[headlineIndex].highlight}</span>
+                  <span className="text-[#E76439] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">{heroHeadlines[headlineIndex].highlight}</span>
                 </motion.h1>
               </AnimatePresence>
             </motion.div>
