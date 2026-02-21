@@ -109,9 +109,6 @@ const Index = () => {
             animate="visible"
             className="max-w-2xl"
           >
-            <motion.p variants={heroItem} className="text-primary font-bold tracking-widest uppercase text-xl mb-4">
-              Cistara International FZE
-            </motion.p>
             <motion.div variants={heroItem} className="h-[120px] md:h-[160px] mb-4 overflow-hidden">
               <AnimatePresence mode="wait">
                 <motion.h1
@@ -127,9 +124,6 @@ const Index = () => {
                 </motion.h1>
               </AnimatePresence>
             </motion.div>
-            <motion.p variants={heroItem} className="text-2xl font-semibold font-serif  mb-8 italic">
-              Excellence Meets Elegance
-            </motion.p>
             <motion.div variants={heroItem} className="flex flex-wrap gap-4">
               <motion.div whileHover={btnHover} whileTap={btnTap}>
                 <Link

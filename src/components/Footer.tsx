@@ -59,11 +59,11 @@ const Footer = () => {
           <h4 className="font-display text-lg sm:text-xl mb-4 sm:mb-5 font-bold">Business Hours</h4>
           <div className="space-y-2 sm:space-y-3">
             <div>
-              <p className="text-sm sm:text-base font-semibold text-primary">Sunday - Thursday</p>
-              <p className="text-sm sm:text-base opacity-70">09:00 AM - 06:00 PM</p>
+              <p className="text-sm sm:text-base font-semibold text-primary">Monday - Saturday</p>
+              <p className="text-sm sm:text-base opacity-70">07:00 AM - 09:00 PM</p>
             </div>
             <div>
-              <p className="text-sm sm:text-base font-semibold text-primary">Friday - Saturday</p>
+              <p className="text-sm sm:text-base font-semibold text-primary">Sunday</p>
               <p className="text-sm sm:text-base opacity-70">Closed</p>
             </div>
           </div>
