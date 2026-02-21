@@ -6,7 +6,7 @@ import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-glassware.jpg";
 import heroBarGlasses from "@/assets/hero-bar-glasses.png";
 import spiritsImg from "@/assets/whiskey-tumbler.jpg";
-import wineImg from "@/assets/bordeaux-glass.jpg";
+import champagneImg from "@/assets/champagne-glass.jpg";
 import beerImg from "@/assets/pilsner-glass.jpg";
 import cafeImg from "@/assets/cappuccino-cup.jpg";
 import buffetImg from "@/assets/buffet-riser.jpg";
@@ -43,8 +43,8 @@ const btnHover = { scale: 1.05 };
 const btnTap = { scale: 0.97 };
 
 const categories = [
-  { title: "Variants of Glass", image: heroImg, desc: "Explore our glassware collection", link: "/products#glasses" },
-  { title: "Wine & Champagne", image: wineImg, desc: "Elegant stemware for fine dining", link: "/products" },
+  { title: "Variants of Glass", image: heroBarGlasses, desc: "Explore our glassware collection", link: "/products#glasses" },
+  { title: "Wine & Champagne", image: champagneImg, desc: "Elegant stemware for fine dining", link: "/products" },
   { title: "Spirits & Liquor", image: spiritsImg, desc: "Crystal-clear barware collection", link: "/products" },
   { title: "Beer Glassware", image: beerImg, desc: "Premium craft beer glasses", link: "/products" },
   { title: "Café Essentials", image: cafeImg, desc: "Refined coffee & tea service", link: "/products" },
