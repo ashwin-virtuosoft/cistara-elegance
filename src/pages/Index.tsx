@@ -24,23 +24,6 @@ const fadeUp = {
   }),
 };
 
-const heroContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { staggerChildren: 0.12, delayChildren: 0.2 },
-  },
-};
-
-const heroItem = {
-  hidden: { opacity: 0, y: 28 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: "easeOut" as const },
-  },
-};
-
 const cardHover = { scale: 1.02, y: -4 };
 const cardTap = { scale: 0.98 };
 const btnHover = { scale: 1.05 };
@@ -93,12 +76,8 @@ const Index = () => {
     <Layout>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-[#E76439]/25 via-[#E76439]/15 to-[#E76439]/20"
-          aria-hidden
-        />
         <div className="absolute inset-0">
-          <AnimatePresence mode="wait" initial={false}>
+          <AnimatePresence mode="sync" initial={false}>
             <motion.div
               key={headlineIndex}
               className="absolute inset-0"
@@ -113,67 +92,41 @@ const Index = () => {
                 className="w-full h-full object-cover object-center"
                 aria-hidden
                 initial={{ scale: 1 }}
-                animate={{ scale: [1, 1.03, 1] }}
-                transition={{ duration: 12, ease: "easeInOut", repeat: Infinity, repeatDelay: 2 }}
-              />
-              {/* Gradient overlay for text readability & visual appeal */}
-              <div
-                className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/50 to-transparent"
-                aria-hidden
-              />
-              <div
-                className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/40"
-                aria-hidden
-              />
-              <div
-                className="absolute inset-0 bg-gradient-to-br from-[#E76439]/10 via-transparent to-transparent"
-                aria-hidden
+                animate={{ scale: [1, 1.06, 1] }}
+                transition={{
+                  duration: 9,
+                  ease: "easeInOut",
+                  repeat: Infinity,
+                  repeatDelay: 0.5,
+                }}
               />
             </motion.div>
           </AnimatePresence>
         </div>
 
         <div className="container mx-auto px-4 relative z-10 pt-20">
-          <motion.div
-            variants={heroContainer}
-            initial="hidden"
-            animate="visible"
-            className="max-w-2xl text-primary-foreground"
-          >
-            <motion.div variants={heroItem} className="h-[120px] md:h-[160px] mb-4 overflow-hidden">
-              <AnimatePresence mode="wait">
-                <motion.h1
-                  key={headlineIndex}
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -40 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  className="text-5xl md:text-7xl font-display font-bold leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
-                >
-                  {heroHeadlines[headlineIndex].top}{" "}
-                  <span className="text-[#E76439] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">{heroHeadlines[headlineIndex].highlight}</span>
-                </motion.h1>
-              </AnimatePresence>
-            </motion.div>
-            <motion.div variants={heroItem} className="flex flex-wrap gap-4">
-              <motion.div whileHover={btnHover} whileTap={btnTap}>
-                <Link
-                  to="/products"
-                  className="rounded-full px-8 py-3.5 font-semibold text-primary-foreground inline-flex items-center gap-2 bg-[#E76439]"
-                >
-                  View Products <ArrowRight size={18} />
-                </Link>
-              </motion.div>
-              <motion.div whileHover={btnHover} whileTap={btnTap}>
-                <Link
-                  to="/contact"
-                  className="rounded-full px-8 py-3.5 font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors inline-block"
-                >
-                  Contact Us
-                </Link>
-              </motion.div>
-            </motion.div>
-          </motion.div>
+          <div className="max-w-2xl text-primary-foreground">
+            <div className="h-[120px] md:h-[160px] mb-4 flex items-end">
+              <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+                {heroHeadlines[headlineIndex].top}{" "}
+                <span className="text-[#E76439] drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">{heroHeadlines[headlineIndex].highlight}</span>
+              </h1>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                to="/products"
+                className="rounded-full px-8 py-3.5 font-semibold text-primary-foreground inline-flex items-center gap-2 bg-[#E76439]"
+              >
+                View Products <ArrowRight size={18} />
+              </Link>
+              <Link
+                to="/contact"
+                className="rounded-full px-8 py-3.5 font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors inline-block"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -284,14 +237,6 @@ const Index = () => {
           initial={{ scale: 1 }}
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 8, ease: "easeInOut", repeat: Infinity, repeatDelay: 0.5 }}
-        />
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-black/70 via-[#E76439]/75 to-black/60"
-          aria-hidden
-        />
-        <div
-          className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/30"
-          aria-hidden
         />
       </div>
       <div className="container mx-auto relative z-10">
